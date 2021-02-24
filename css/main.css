@@ -1,33 +1,6 @@
+/*---------------------FONTS----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import 'nav-footer.css';
+@import './_nav.css';
+@import './_footer.css';
+@import './_scrollbar.css'
 
-/*---------------------HEADER----------------------------------*/
-
-.header{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    background-image: url('.././img/header-bg.jpg');
-    box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
-    -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
-    -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
-    /* background: rgb(255,253,253);
-    background: linear-gradient(0deg, rgba(255,253,253,1) 5%, rgba(170,166,166,1) 52%, rgba(134,134,134,1) 100%); */
-}
-
-.header-right{
-    padding-top: 100px;
-}
-.header-left > p{
-    font-size: x-large;
-    font-weight: 300;
-}
-/* 
-#caret {
-    border-right: .05em solid;
-    animation: blinkTextCursor 500ms steps(44) infinite normal;
-  }
-  
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-} */
