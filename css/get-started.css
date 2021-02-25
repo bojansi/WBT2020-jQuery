@@ -1,0 +1,91 @@
+@import './main.css';
+
+.header{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  background-image: url('.././img/header-bg.jpg');
+  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  /* background: rgb(255,253,253);
+  background: linear-gradient(0deg, rgba(255,253,253,1) 5%, rgba(170,166,166,1) 52%, rgba(134,134,134,1) 100%); */
+}
+
+
+.sidenav{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidenav > p {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color:black;
+  font-size: 24px;
+  padding: 10px !important;  
+}
+
+.sidenav > p:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+  font-size: 24px;
+  padding: 10px !important;
+  background-color: darkgray;
+}
+
+.dropdown-container{
+  display: none;
+}
+
+.dropdown-container > ul{
+  padding-left:20px;
+}
+
+.dropdown-container > ul > li{
+  position: relative;
+  display: block;
+  background-color:white;
+  padding:5px;
+  border-radius:10px;
+}
+
+.dropdown-container > ul > li:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  bottom: 0;
+  left: 5px;
+  background-color: #21609B;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.dropdown-container > ul > li:hover {
+  cursor: pointer;
+}
+
+.dropdown-container > ul > li:hover:before {
+  cursor: pointer;
+  visibility: visible;
+  width: 60%;
+}
+
+.content{
+  
+  width:90%;
+  height:90%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 202, 202);
+  display: none;
+}
