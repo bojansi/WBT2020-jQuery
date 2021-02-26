@@ -1,8 +1,4 @@
 /*---------------------NAVBAR----------------------------------*/
-nav{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;  
-}
 .navbar-brand > a > img {
   height: 100%;
 }

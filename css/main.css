@@ -5,5 +5,52 @@
 
 @import './_nav.css';
 @import './_footer.css';
-@import './_scrollbar.css'
+@import './_scrollbar.css';
 
+/*----------------------HEADER FOR ALL PAGES----------------------------------*/
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.header{
+  background-image: url('.././img/header-bg.jpg');
+  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+}
+
+.header > .container > h1{
+  padding-bottom: 20px;
+  font-size: 4rem;
+}
+
+/* 
+.header{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  background-image: url('.././img/header-bg.jpg');
+  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+}
+
+.header{   font-family: 'Quicksand', sans-serif;  
+  font-weight: 500;  
+  background-image: url('.././img/header-bg.jpg');  
+  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;  
+  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset; 
+  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;  
+}
+
+.header{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  background-image: url('.././img/header-bg.jpg');
+  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
+} */

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Beginner pitanje 1",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 2",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 3",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 4",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 5",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 6",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 7",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 8",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 9",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  },
+  {
+    "question": "Beginner pitanje 10",
+    "answers": [
+      "Odgovor 1",
+      "Odgovor 2",
+      "Odgovor 3",
+      "Odgovor 4"
+    ],
+    "correct-answer": "Odgovor 1"
+  }
+]

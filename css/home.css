@@ -1,18 +1,5 @@
-@import './main.css';
-
-/*---------------------HEADER----------------------------------*/
-
 *{
   font-family: 'Quicksand', sans-serif;
-}
-
-.header{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  background-image: url('.././img/header-bg.jpg');
-  box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
-  -webkit-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
-  -moz-box-shadow: 8px -64px 22px -46px rgba(255,255,255,1) inset;
 }
 
 .header-right{
