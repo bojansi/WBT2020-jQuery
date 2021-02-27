@@ -12,8 +12,41 @@
   
 }
 
-ul{
+.footer-list{
   list-style-type: none;
   text-decoration: none;
   padding-left: 0;
+  line-height: 35px;
+}
+
+.footer-list > li > a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  /* display: block;*/
+   padding-bottom:5px;
+   border-radius:10px;
+}
+
+
+.footer-list > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  background-color: #21609B;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.footer-list > li > a:hover {
+  cursor: pointer;
+}
+
+.footer-list > li > a:hover:before {
+  cursor: pointer;
+  visibility: visible;
+  width: 100%;
 }
