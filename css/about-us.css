@@ -21,6 +21,12 @@ background: linear-gradient(225deg, rgba(48,48,48,1) 0%, rgba(108,108,108,0.2007
   height:750px
 }
 
+@media (max-width:992px) {
+  .cards-images{
+    height:100%
+   }
+}
+
 .box{
   position: relative;
   width: 300px;
@@ -129,9 +135,9 @@ background: linear-gradient(36deg, rgba(48,48,48,1) 0%, rgba(108,108,108,0.20071
   background: rgba(0,0,0,0.4);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
   opacity: 1;
   z-index: -1;
   width:280px;
