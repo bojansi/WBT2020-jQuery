@@ -8,12 +8,13 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/copy-button.js" defer></script>
 
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/downloads.css">
 
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <title>Downloads</title>
+  <title>Preuzimanja</title>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./downloads.html">Downloads</a>
+            <a class="nav-link" href="./downloads.html">Preuzimanja</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./get-started.html">Get Started</a>
@@ -65,35 +66,198 @@
   </nav>
   <div class="header container-fluid py-5 text-white">
     <div class="container">
-      <h1 class="display-4 text-white text-center">Downloads</h1>
+      <h1 class="display-4 text-white text-center">Preuzimanja</h1>
     </div>
   </div>
 
   <div class="container-fluid py-5">
     <div class="container">
-      <h3>Lorem ipsum dolor sit</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non illo reiciendis voluptate eveniet ducimus
-        provident minus deleniti quos adipisci odit reprehenderit impedit maiores expedita voluptatum suscipit saepe,
-        accusamus consectetur tempora voluptates! Repellendus ipsa neque dolor modi aliquam pariatur molestiae
-        voluptate, dicta, asperiores sequi explicabo expedita esse, similique iste nisi? Asperiores.</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore rem ratione, illum, officia rerum sequi
-        pariatur, impedit sunt ut in quas dignissimos quos assumenda voluptas saepe exercitationem facere vel est
-        perspiciatis? Suscipit illo tempore voluptatibus facilis obcaecati est explicabo enim, aperiam tempora commodi
-        facere labore totam? Repudiandae est, laudantium cupiditate ex fugiat nesciunt totam repellendus esse. Eligendi
-        velit repellat excepturi nemo dolores ducimus, quis animi reprehenderit aspernatur! Illo nihil vero, sint
-        debitis eum, illum dolorem hic aliquid facilis officia libero sequi aspernatur corrupti odio ullam omnis nobis
-        voluptatibus alias eos. Possimus modi sint dicta tempore, iste repellat dolores mollitia?
-      </p>
+        <h3>Preuzimanje jQuery-a</h3>
+        <p>Za preuzimanje jQuery-ja dostupne su kompresovane i nekompresovane kopije jQuery datoteka. Nekompresovane datoteke se najpre koriste tokom razvoja ili otklanjanja grešaka. Kompresovana datoteka je manja od nekompresovane. Ona štedi propusni opseg i poboljšava performanse u proizvodnji zbog čega se ovaj vid datoteke češće postavlja na sajt.</p>
+        <p>
+          Da biste lokalno preuzeli ove datoteke, pritisnite desnim tasterom miša na vezu i u meniju izaberite "Sačuvaj kao.."
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.min.js" target="_blank">Preuzimanje kompresovanog jQuery 3.5.1</a> <br>
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.js" target="_blank">Preuzimanje nekompresovanog jQuery 3.5.1</a>
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.min.map">Preuzimanje map file za jQuery 3.5.1</a>
+        </p>
+        <p>
+          Takođe, korisnik može da koristi slim verziju koja isključuje Ajax i efekte.
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.slim.min.js" target="_blank">Preuzimanje kompresovanog slim jQuery-a 3.5.1</a>
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.slim.js" target="_blank">Preuzimanje nekompresovanog slim jQuery 3.5.1</a>
+        </p>
+        <p>
+          <a href="https://code.jquery.com/jquery-3.5.1.slim.min.map">Preuzimanje slim map file za jQuery 3.5.1</a>
+        </p>
+        <h3>Menadžeri paketa</h3>
+
+        <p>
+          jQuery je registrovan na menadžeru paketa za JavaScript programski jezik. jQuery se može instalirati pomoću sledećih menadžera paketa:
+        </p>
+        <h5>Preuzimanje jQuery korišćenjem npm</h5> 
+
+        <div class="code mb-4"> 
+          <p>
+            <em><span># npm</span> install jquery</em>
+          </p> 
+        </div>
+
+        <h5>Preuzimanje jQuery korišćenjem Yarn-a </h5>
+        
+        <div class="code mb-4"> 
+          <p>
+            <em><span># yarn</span> add jquery</em>
+          </p> 
+        </div>
+        
+        <p>
+          Pomoću ovih komandi instaliraće se jQuery u <code>node_modules </code> direktorijumu. 
+        </p>
+
+        <h5>Preuzimanje jQuery-a korišćenjem Bower-a </h5>
+
+        <div class="code mb-4">
+            <p>
+              <em><span># bower</span> install jquery</em>
+            </p> 
+        </div>
+        
+        <p>
+          Pomoću ove komande ćemo instalirati jQuery u <code>bower_components</code> direktorijumu.
+        </p>
+        <p> 
+          Korišćenjem Bower-a postoji mogućnost instalacije jQuery-a sa jednog od gore navedenih URL-ova umesto iz registrovanog paketa. Na primer ako želite instalirati samo nekompresovanu datoteku jQuery-a možete instalirati samo tu datoteku sledećom naredbom:
+        </p>
+        <div class="code mb-3">
+            <p><em><span># bower</span> install https://code.jquery.com/jquery-3.5.1.js</em>
+          </p> 
+        </div>
+        <h5>Korišćenje jQuery-a pomoću CDN-a</h5>
+        <p class="text-tag">
+          CDN nudi poboljšanje performansi hostovanjem jQuery-a na serverima širmo sveta. Ovo takođe predstavlja prednost ako je posetilac web strane već preuzeo kopiju jQuery-a sa istog CDN-a jer neće morati ponovo da ga preuzima. Da bi koristili jQuery CDN potrebno je referencirati datoteku u <span>script</span> tagu direktno sa jQuery CDN domena.
+        </p>
+
+        <!--
+        ===================================================
+        -->
+
+        <p>
+          Najnovije jQuery CDN verzije
+        </p>
+        <div class="query-version">
+          <h6>jQuery 3.5.1</h6>
+          <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-uncompressed-tab" data-bs-toggle="pill" data-bs-target="#pills-uncompressed" type="button" role="tab" aria-controls="pills-uncompressed" aria-selected="true">uncompressed</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-minified-tab" data-bs-toggle="pill" data-bs-target="#pills-minified" type="button" role="tab" aria-controls="pills-minified" aria-selected="false">minified</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-slim-tab" data-bs-toggle="pill" data-bs-target="#pills-slim" type="button" role="tab" aria-controls="pills-slim" aria-selected="false">slim</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-sminified-tab" data-bs-toggle="pill" data-bs-target="#pills-sminified" type="button" role="tab" aria-controls="pills-sminified" aria-selected="false">slim minified</button>
+            </li>
+              <li  class="nav-item" role="presentation">
+                <button class="nav-link btnCopy"  type="button" role="tab">Kopiraj</button>
+          
+              </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-uncompressed" role="tabpanel" aria-labelledby="pills-uncompressed-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-uncompressed > p').text("<script src=\"https://code.jquery.com/jquery-3.5.1.js\" integrity=\"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=\" crossorigin=\"anonymous\"><\/script>")</script>
+          
+            </div>
+            <div class="tab-pane fade" id="pills-minified" role="tabpanel" aria-labelledby="pills-minified-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-minified > p').text("<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" integrity=\"sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+            <div class="tab-pane fade" id="pills-slim" role="tabpanel" aria-labelledby="pills-slim-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-slim > p').text("<script src=\"https://code.jquery.com/jquery-3.5.1.slim.js\" integrity=\"sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+            <div class="tab-pane fade" id="pills-sminified" role="tabpanel" aria-labelledby="pills-sminified-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-sminified > p').text("<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+          </div>
+        </div>
+        <div class="query-version">
+          <h6>jQuery 2.2.4</h6>
+          <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-uncompressed1-tab" data-bs-toggle="pill" data-bs-target="#pills-uncompressed1" type="button" role="tab" aria-controls="pills-uncompressed1" aria-selected="true">uncompressed</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-minified1-tab" data-bs-toggle="pill" data-bs-target="#pills-minified1" type="button" role="tab" aria-controls="pills-minified1" aria-selected="false">minified</button>
+            </li>
+            <li  class="nav-item" role="presentation">
+              <button class="nav-link btnCopy "   type="button" role="tab" >Kopiraj</button>
+          
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-uncompressed1" role="tabpanel" aria-labelledby="pills-uncompressed1-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-uncompressed1 > p').text("<script src=\"https://code.jquery.com/jquery-2.2.4.js\" integrity=\"sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+            <div class="tab-pane fade" id="pills-minified1" role="tabpanel" aria-labelledby="pills-minified1-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-minified1 > p').text("<script src=\"https://code.jquery.com/jquery-2.2.4.min.js\" integrity=\"sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+          </div>
+        </div>
+
+        <div class="query-version">
+          <h6>jQuery 1.2.4</h6>
+          <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-uncompressed2-tab" data-bs-toggle="pill" data-bs-target="#pills-uncompressed2" type="button" role="tab" aria-controls="pills-uncompressed2" aria-selected="true">uncompressed</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-minified2-tab" data-bs-toggle="pill" data-bs-target="#pills-minified2" type="button" role="tab" aria-controls="pills-minified2" aria-selected="false">minified</button>
+            </li>
+            <li  class="nav-item" role="presentation">
+              <button class="nav-link btnCopy"  type="button" role="tab" >Kopiraj</button>
+          
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-uncompressed2" role="tabpanel" aria-labelledby="pills-uncompressed2-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-uncompressed2 > p').text("<script src=\"https://code.jquery.com/jquery-1.12.4.js\" integrity=\"sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+            <div class="tab-pane fade" id="pills-minified2" role="tabpanel" aria-labelledby="pills-minified2-tab">
+              <p class="pils-link"></p>
+              <script>$('#pills-minified2 > p').text("<script src=\"https://code.jquery.com/jquery-1.12.4.min.js\" integrity=\"sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=\" crossorigin=\"anonymous\"><\/script>")</script>
+            </div>
+          </div>
+        </div>
+        
+          <div class="query-version">
+            <h6>jQuery za mobilne</h6>
+                   
+                    <ul>
+            <li>
+              jQuery Mobile 1.4.5  <a  href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js" target="_blank">uncompressed</a>, <a href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" target="_blank">minified</a>, <a href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" target="_blank">theme</a> (<a href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" target="_blank">structure only</a>)
+            </li>
+                    </ul>
+          </div>
+
     </div>
   </div>
 
-  <div class="container">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-    <div class="code">
-      <p> 1 | bower install https:<em>//code.jquery.com/jquery-3.5.1.min.js</em></p>
-    </div>
-  </div>
 
   <div class="footer container-fluid text-center text-white mt-5">
     <div class="container">
@@ -125,12 +289,10 @@
     </div>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-
-
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
