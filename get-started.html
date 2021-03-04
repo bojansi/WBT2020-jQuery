@@ -160,8 +160,24 @@
       </div>
 
       <div class="col-lg-10 d-flex justify-content-center align-items-center">
-        <div class="content" data-content="0">
-          <h1 class="display-4 text-center">WELCOME TO AJAX TUTORIAL</h1>
+        <div class="content p-2" data-content="0">
+          <!--<h1 class="display-4 text-center">Kako jQuery funkcioniše?</h1>-->
+          <p>Pred vama je tutorijal osmišljen tako da vam pomogne da započnete korišćenje jQuery biblioteke.<br>Nakon uspešnog preuzimanja jQuery biblioteke, možete započeti sa radom.<br>jQuery <b>sintaksa</b> je bazirana na <i>selektovanju HTML elemenata</i> i <i>izvršavanja akcija nad njima</i>. uz pomoć jQuery <selektora>.<br>
+          <b>$(selector).action()</b> - jQuery sintaksa <br>
+          Svi selektori u jQuery-ju počinju znakom dolar i malim zagradama: <b>$()</b>. jQuery koristi promenljivu „$” kao skraćenicu umesto reči jQuery.<br>
+          <b>Primeri</b></br>
+          <ul>
+          <li>$(this).hide() - skriva tekući element.</li>
+          <li>$(".test").hide() - skriva sve elemente sa klasom "test".</li>
+          <li>$("#test").hide() - skriva sve elemente sa id="test".</li>
+          </ul>
+          Ono što jQuery izdvaja od drugih biblioteka su njegove veoma proste za korišćenje ali pri tom veoma moćne metode.<br>Metode su najčešće unutar <b>"document ready"</b> događaja. <br>
+          <b>$(document).ready(function(){ <br>
+          // jQuery metode... <br>
+          }); </b><br>
+          Ovim se sprečava pokretanje bilo kog JQuery koda pre nego što se dokument učita (is ready).<br>Dobra je praksa sačekati da se dokument učita, pa tek onda raditi sa njim.
+          <br> jQuery metode su podeljene u više namenskih grupa i sveukupno čine njegov <b>API</b>.
+          </p>
         </div>
         <div class="content" data-content="1">
           <h1 class="display-4 text-center">WELCOME TO EXAMPLE 1 TUTORIAL</h1>
