@@ -25,7 +25,6 @@
   position: relative;
   /* display: block;*/
    padding-bottom:5px;
-   border-radius:10px;
 }
 
 
@@ -35,10 +34,11 @@
   width: 0;
   height: 3px;
   bottom: 0;
+  left:-10%;
   background-color: #21609B;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .footer-list > li > a:hover {
@@ -48,5 +48,5 @@
 .footer-list > li > a:hover:before {
   cursor: pointer;
   visibility: visible;
-  width: 100%;
+  width: 120%;
 }

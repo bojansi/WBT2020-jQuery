@@ -8,7 +8,11 @@
   justify-content: center;
 }
 
-.sidenav > p {
+.sidenav > a{
+  text-decoration: none;
+}
+
+.sidenav > a > p {
   display: block;
   margin: 0;
   text-decoration: none;
@@ -17,7 +21,7 @@
   padding: 10px !important;  
 }
 
-.sidenav > p:hover {
+.sidenav > a > p:hover {
   cursor: pointer;
   text-decoration: none;
   color:white;
@@ -48,7 +52,7 @@
   width: 0;
   height: 5px;
   bottom: 0;
-  left: 5px;
+  left: -5px;
   background-color: #21609B;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
@@ -62,17 +66,71 @@
 .dropdown-container > ul > li:hover:before {
   cursor: pointer;
   visibility: visible;
-  width: 60%;
+  width: 70%;
 }
 
 .content{
-  
-  width:90%;
-  height:90%;
+  width:100%;
+  height:100%;
   border-radius: 20px;
+  padding: 10px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(202, 202, 202);
   display: none;
+  font-size: 1.2rem;
 }
+
+/*------------------------------------------------------*/
+
+.markerT{
+  color:rgb(38, 168, 255);
+}
+
+.markerB{
+  color:rgb(107, 196, 255);
+}
+
+.html_code{
+  margin: 0.5rem 0rem;
+  width:100%;
+  background-color: #292929;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  padding: 0.8rem 1rem;
+  color:rgb(201, 201, 201);
+  font-size: 1rem;
+  border-radius: 20px;
+}
+.html_code > p{
+  margin:0;
+}
+
+.first {
+  width:100%;
+  height:100%;
+  background-color: #292929;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  outline: none;
+  padding: 1rem;
+  color:rgb(201, 201, 201);
+  word-wrap: break-word;
+  tab-size: 4;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.second {
+  width:100%;
+  height: 190px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  white-space: pre;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  border-radius: 20px;
+}
+
