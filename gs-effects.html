@@ -427,7 +427,7 @@
 
             <div class="col-lg-5 col-md-12">
               <h3 class="fw-bolder text-center py-3">.fadeOut()</h3>
-              <p>Služi za animirano skrivanje elementa na stranici. Tranzicija je tipa <b>fade</b> sto znaci da se
+              <p>Služi za animirano sakrivanje elementa na stranici. Tranzicija je tipa <b>fade</b> sto znaci da se
                 elementu postepeno smanjuje providnost tokom odredjenog vremenskog perioda.</p>
               <hr size="5px">
               <p> Razliciti nacini da se pozove funkcija fadeOut()</p>
@@ -475,7 +475,7 @@
 
             <div class="col-lg-5 col-md-12">
               <h3 class="fw-bolder text-center py-3">.fadeToggle()</h3>
-              <p>Služi za animirano prikazivanje ili skrivanje elementa na stranici. Tranzicija je tipa <b>fade</b>
+              <p>Služi za animirano prikazivanje ili sakrivanje elementa na stranici. Tranzicija je tipa <b>fade</b>
                 sto
                 znaci da se
                 elementu postepeno povecava to jest smanjuje providnost tokom odredjenog vremenskog perioda</p>
@@ -530,13 +530,13 @@
             <div class="col-lg-5 col-md-12">
               <h3 class="fw-bolder text-center py-3">.slideDown()</h3>
               <p>Služi za animirano prikazivanje elementa na stranici. Tranzicija je tipa <b>slide</b> sto znaci da se
-                element postepeno pojavljuje odozgo na dole</p>
+                element postepeno pojavljuje odozgo na dole.</p>
               <hr size="5px">
-              <p> Razliciti nacini da se pozove funkcija fadeIn()</p>
+              <p> Razliciti nacini da se pozove funkcija slideDown()</p>
               <p> <b>- Odredjenom duzinom trajanja</b></p>
-              <p>.fadeIn(<i>trajanje animacije</i>)</p>
+              <p>.slideDown(<i>trajanje animacije</i>)</p>
               <p> <b>- Odredjenom duzinom trajanja i odredjenom tranzicijom</b></p>
-              <p>.fadeIn(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p>.slideDown(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -576,14 +576,14 @@
 
             <div class="col-lg-5 col-md-12">
               <h3 class="fw-bolder text-center py-3">.slideUp()</h3>
-              <p>Služi za animirano skrivanje elementa na stranici. Tranzicija je tipa <b>fade</b> sto znaci da se
-                elementu postepeno smanjuje providnost tokom odredjenog vremenskog perioda.</p>
+              <p>Služi za animirano sakrivanje elementa na stranici. Tranzicija je tipa <b>slide</b> sto znaci da se
+                element postepeno sakriva odozdo na gore.</p>
               <hr size="5px">
-              <p> Razliciti nacini da se pozove funkcija fadeOut()</p>
+              <p> Razliciti nacini da se pozove funkcija slideUp()</p>
               <p> <b>- Odredjenom duzinom trajanja</b></p>
-              <p>.fadeOut(<i>trajanje animacije</i>)</p>
+              <p>.slideUp(<i>trajanje animacije</i>)</p>
               <p> <b>- Odredjenom duzinom trajanja i odredjenom tranzicijom</b></p>
-              <p>.fadeOut(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p>.slideUp(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -623,16 +623,14 @@
 
             <div class="col-lg-5 col-md-12">
               <h3 class="fw-bolder text-center py-3">.slideToggle()</h3>
-              <p>Služi za animirano prikazivanje ili skrivanje elementa na stranici. Tranzicija je tipa <b>fade</b>
-                sto
-                znaci da se
-                elementu postepeno povecava to jest smanjuje providnost tokom odredjenog vremenskog perioda</p>
+              <p>Služi za animirano prikazivanje ili sakrivanje elementa na stranici. Tranzicija je tipa <b>slide</b>
+                sto znaci da se element prikazuje to jest sakriva odozgo na dole to jest, odozdo na gore.</p>
               <hr size="5px">
-              <p> Razliciti nacini da se pozove funkcija fadeToggle()</p>
+              <p> Razliciti nacini da se pozove funkcija slideToggle()</p>
               <p> <b>- Odredjenom duzinom trajanja</b></p>
-              <p>.fadeToggle(<i>trajanje animacije</i>)</p>
+              <p>.slideToggle(<i>trajanje animacije</i>)</p>
               <p> <b>- Odredjenom duzinom trajanja i odredjenom tranzicijom</b></p>
-              <p>.fadeToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p>.slideToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -648,7 +646,7 @@
         <button id="dugme">Sakrij naslove slideToggle</button>
         <h1>Prvi naslov</h1>
         <h2 style="display:none">Drugi naslov</h2>
-        <h3>Treci naslov</h4>
+        <h3 style="border:2px solid black">Treci naslov</h4>
     <script>
       $('#dugme').click(function () {
         $("h1").slideToggle();
@@ -691,7 +689,7 @@
                   tranzicije)</b></p>
               <p>.animate(<i>CSSsvojstva</i>, <i>[trajanje]</i>, <i>[tranzicija]</i>)</p>
               <p> <b>- Sa objektom CSS svojstava i dodatnim opcijama</b></p>
-              <p>.toggle(<i>CSSsvojstva</i>, <i>{...opcije...}</i>)</p>
+              <p>.animate(<i>CSSsvojstva</i>, <i>{...opcije...}</i>)</p>
               <p>U opcije pored gore pomenutih svojstava <b>duration(trajanje)</b>b> i <b>easing(tip tranzicije)</b>
                 moguce je odrediti
                 jos neke dodatne parametre kao sto su:</p>
