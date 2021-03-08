@@ -12,12 +12,13 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="./js/html-parser.js"></script>
+  <script src="./js/html-parser.js">
+  </script>
   <script src="./js/myJS.js"></script>
   <script src="./js/sidebar.js"></script>
 
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <title>Get Started</title>
+  <link rel="shortcut icon" href="./img/" type="image/x-icon">
+  <title>CSS</title>
 </head>
 
 <body>
@@ -106,10 +107,23 @@
             </ul>
           </div> -->
 
+          <a href="#">
+            <p class="dropdown-btn">Dimensions</p>
+          </a>
+          <!-- <div class="dropdown-container">
+            <ul>
+              <li>Example 1</li>
+              <li>Example 2</li>
+              <li>Example 3</li>
+              <li>Example 4</li>
+              <li>Example 5</li>
+            </ul>
+          </div> -->
+
           <a class="dropdown-btn">
             <p>CSS</p>
           </a>
-          <div class="dropdown-container">
+          <div class="dropdown-container" style="display:block">
             <ul>
               <li>addClass()</li>
               <li>removeClass()</li>
@@ -119,16 +133,17 @@
             </ul>
           </div>
 
-          <a href="#">
-            <p class="dropdown-btn">Effects</p>
+          <a href="./gs-effects.html" class="dropdown-btn">
+            <p>Effects</p>
           </a>
-          <!-- <div class="dropdown-container">
+          <!-- <div class="dropdown-container" style="display:block">
             <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
+              <li>show()</li>
+              <li>hide()</li>
+              <li>toggle()</li>
+              <li>fade()</li>
+              <li>slide()</li>
+              <li>animate()</li>
             </ul>
           </div> -->
 
@@ -200,15 +215,39 @@
                 Nakon izvsenja skripte sa <b>addClass</b> metodom vidimo da svaki dobija klasu <b>.podvuci</b> i da
                 treci
                 naslov dobija klase <b>.oboji</b> i <b>.smanji</b> .</p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
             </div>
             <div class="col-lg-6 py-3">
-              <div class="col-lg-12">
-                <div class="first" contenteditable spellcheck="false" data-index="1">
+              <div class="row h-100">
+                <div class="col-lg-12">
+                  <textarea class="first" data-index="1" spellcheck="false">
+<style>
+  .oboji { color:red; }
+  .podvuci { text-decoration:underline; }
+  .smanji { font-size:18px; }
+</style>
+<body>
+        <button id="dugme">Pokreni addClass metode</button>
+        <h1>Prvi naslov</h1>
+        <h2>Drugi naslov</h2>
+        <h3>Treci naslov</h4>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $('#dugme').click(function () {
+        $("h1").addClass("podvuci");
+        $("h2").addClass("oboji smanji");
+        $("h3").addClass("podvuci smanji");
+      });
+    </script>
+</body>
+                  </textarea>
                 </div>
-              </div>
-              <div class="col-lg-12 mt-3">
-                <iframe class="second" data-index="1">
-                </iframe>
+                <div class="col-lg-12">
+                  <iframe class="second" data-index="1">
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -233,16 +272,39 @@
                   Nakon izvsenja skripte sa <b>removeClass</b> metodom vidimo da svaki gubi klase koje smo definisali
                   u
                   pomenutoj metodi i to su klase <b>.oboji</b> i <b>.smanji</b> .</p>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-primary try-example">Pokreni primer</button>
+                </div>
               </div>
             </div>
             <div class="col-lg-6 py-3">
-              <div class="col-lg-12">
-                <div class="first" contenteditable spellcheck="false" data-index="2">
+              <div class="row h-100">
+                <div class="col-lg-12">
+                  <textarea class="first" data-index="2" spellcheck="false">
+<style>
+  .oboji { color:red; }
+  .podvuci { text-decoration:underline; }
+  .smanji { font-size:18px; }
+</style>
+<body>
+        <button id="dugme">Pokreni addClass metode</button>
+        <h1 class="oboji smanji">Prvi naslov</h1>
+        <h2 class="podvuci smanji">Drugi naslov</h2>
+        <h3 class="oboji podvuci">Treci naslov</h4>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $('#dugme').click(function () {
+        $("h1").removeClass("oboji");
+        $("h2, h3").removeClass("podvuci smanji");
+      });
+    </script>
+</body>
+                  </textarea>
                 </div>
-              </div>
-              <div class="col-lg-12 mt-3">
-                <iframe class="second" data-index="2">
-                </iframe>
+                <div class="col-lg-12">
+                  <iframe class="second" data-index="2">
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -274,14 +336,33 @@
                 naslova istom se dodaju ili oduzimaju klase prosledjene metodi <b>toggleClass</b>, u nasem slucaju
                 to su klase <b>.oboji</b> i <b>.podvuci</b> .
               </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
             </div>
             <div class="col-lg-6 py-3">
-              <div class="row">
+              <div class="row h-100">
                 <div class="col-lg-12">
-                  <div class="first" contenteditable spellcheck="false" data-index="3">
-                  </div>
+                  <textarea class="first" data-index="3" spellcheck="false">
+<style>
+  .oboji { color:red; }
+  .podvuci { text-decoration:underline; }
+  .smanji { font-size:18px; }
+</style>
+<body>
+        <h1>Klikni me</h1>
+        <h2 class="oboji">I mene</h2>
+        <h3 class="oboji">Mene nemoj da kliknes</h4>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $("h1").click(function () { $("h1").toggleClass("podvuci"); });
+      $("h2").click(function () { $("h2").toggleClass("oboji smanji"); });
+      $("h3").click(function () { $("h3").toggleClass("oboji"); });
+    </script>
+</body>
+                  </textarea>
                 </div>
-                <div class="col-lg-12 mt-3">
+                <div class="col-lg-12">
                   <iframe class="second" data-index="3">
                   </iframe>
                 </div>
@@ -318,14 +399,36 @@
                 klasama. Koristeci metodu <b>hasClass</b> menjamo sadrzaj naslovima sa vrednoscu koju vraca funkcija
                 hasClass (<b>true</b> ili <b>false</b>).
               </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
             </div>
             <div class="col-lg-6 py-3">
-              <div class="row">
+              <div class="row h-100">
                 <div class="col-lg-12">
-                  <div class="first" contenteditable spellcheck="false" data-index="4">
-                  </div>
+                  <textarea class="first" data-index="4" spellcheck="false">
+<style>
+  .oboji { color:red; }
+  .podvuci { text-decoration:underline; }
+  .smanji { font-size:18px; }
+</style>
+<body>
+        <button id="dugme">Pokreni hasClass metode</button>
+        <h1 class="podvuci">Prvi naslov </h1>
+        <h2 class="oboji">Drugi naslov </h2>
+        <h3 class="podvuci oboji smanji">Treci naslov </h4>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $('#dugme').click(function () {
+        $("h1").append($("h1").hasClass("smanji").toString());
+        $("h2").append($("h2").hasClass("oboji").toString());
+        $("h3").append($("h3").hasClass("podvuci").toString());
+      });
+    </script>
+</body>
+                  </textarea>
                 </div>
-                <div class="col-lg-12 mt-3">
+                <div class="col-lg-12">
                   <iframe class="second" data-index="4">
                   </iframe>
                 </div>
@@ -370,14 +473,37 @@
               <p>
                 U datom primeru mozemo videti funkciju <b>css</b> u akciji.
               </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
             </div>
             <div class="col-lg-6 py-3">
-              <div class="row">
+              <div class="row h-100">
                 <div class="col-lg-12">
-                  <div class="first" contenteditable spellcheck="false" data-index="5">
-                  </div>
+                  <textarea class="first" data-index="5" spellcheck="false">
+<style>
+  .oboji { color:red; }
+  .smanji { font-size:18px; }
+</style>
+<body>
+        <button id="dugme">Pokreni addClass metode</button>
+        <h1 class="oboji">Prvi naslov</h1>
+        <h2>Drugi naslov</h2>
+        <h3 class="smanji">Treci naslov</h4>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $('#dugme').click(function () {
+        $("h1").text($("h1").css("color")); //Uzima boju naslova
+        $("h2").css("border", "5px solid black"); //postavlja border naslovu
+        $("h2").css("border-radius", "20px"); //postavlja border radius naslovu
+        $("h3").append(" Font size: " + $("h3").css("font-size")); //ispisuje velicinu fonta naslova
+        $("h3").css("font-family", "Arial"); //postavlja font naslovu
+      });
+    </script>
+</body>
+                  </textarea>
                 </div>
-                <div class="col-lg-12 mt-3">
+                <div class="col-lg-12">
                   <iframe class="second" data-index="5">
                   </iframe>
                 </div>
