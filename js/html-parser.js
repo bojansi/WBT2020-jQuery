@@ -5,15 +5,20 @@ const iframe = document.querySelector(".second");
 
 
 
-$.each($(".first[data-index]"), function(key, element){
+// $.each($(".first[data-index]"), function(key, element){
+//   var frame = document.querySelector(".second[data-index='"+(key+1)+"']").contentWindow.document;
+//   console.log((key+1))
+//     frame.open();
+//     frame.write($(".first[data-index='"+(key+1)+"']").val());
+//     frame.close();
+// });
+
+$.each($(".try-example"), function(key, element){
   var frame = document.querySelector(".second[data-index='"+(key+1)+"']").contentWindow.document;
   console.log((key+1))
     frame.open();
     frame.write($(".first[data-index='"+(key+1)+"']").val());
     frame.close();
-});
-
-$.each($(".try-example"), function(key, element){
   $(element).click(function(){
     var frame = document.querySelector(".second[data-index='"+(key+1)+"']").contentWindow.document;
     frame.open();
