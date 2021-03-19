@@ -17,8 +17,8 @@
   <script src="./js/myJS.js"></script>
   <script src="./js/sidebar.js"></script>
 
-  <link rel="shortcut icon" href="./img/" type="image/x-icon">
-  <title>CSS</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <title>Attributes</title>
 </head>
 
 <body>
@@ -95,20 +95,21 @@
           </div> -->
 
           <a href="./gs-attributes.html">
-            <p class="dropdown-btn">Attributes</p>
+            <p>Attributes</p>
           </a>
-          <!-- <div class="dropdown-container">
+       <!-- <div class="dropdown-container" style="display:block">
             <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
+              <li>.attr()</li>
+              <li>.prop()</li>
+              <li>.html()</li>
+              <li>.val()</li>
+              <li>Example 5</li> 
             </ul>
-          </div> -->
+          </div>-->
+
 
           <a href="./gs-dimensions.html">
-            <p class="dropdown-btn">Dimensions</p>
+            <p>Dimensions</p>
           </a>
           <!-- <div class="dropdown-container">
             <ul>
@@ -120,10 +121,10 @@
             </ul>
           </div> -->
 
-          <a class="dropdown-btn">
+          <a href="./gs-css.html">
             <p>CSS</p>
           </a>
-          <div class="dropdown-container" style="display:block">
+<!--           <div class="dropdown-container" style="display:block">
             <ul>
               <li>addClass()</li>
               <li>removeClass()</li>
@@ -131,7 +132,7 @@
               <li>hasClass()</li>
               <li>css()</li>
             </ul>
-          </div>
+          </div> -->
 
           <a href="./gs-effects.html" class="dropdown-btn">
             <p>Effects</p>
@@ -148,7 +149,7 @@
           </div> -->
 
           <a href="./gs-manipulation.html">
-            <p class="dropdown-btn">Manipulation</p>
+            <p>Manipulation</p>
           </a>
           <!-- <div class="dropdown-container">
             <ul>
@@ -160,10 +161,10 @@
             </ul>
           </div> -->
 
-          <a href="./gs-events.html">
-            <p class="dropdown-btn">Events</p>
+          <a class="dropdown-btn">
+            <p>Events</p>
           </a>
-         <!-- <div class="dropdown-container" style="display:block">
+          <div class="dropdown-container" style="display:block">
             <ul>
               <li>.click()</li>
               <li>.hover()</li>
@@ -171,10 +172,10 @@
               <li>.focus()</li>
               <li>.on()</li>
             </ul>
-          </div>-->
+          </div> 
 
           <a href="#">
-            <p class="dropdown-btn">Traversing</p>
+            <p>Traversing</p>
           </a>
           <!-- <div class="dropdown-container">
             <ul>
@@ -187,7 +188,7 @@
           </div> -->
 
           <a href="#">
-            <p class="dropdown-btn">Utilities</p>
+            <p>Utilities</p>
           </a>
           <!-- <div class="dropdown-container">
             <ul>
@@ -204,30 +205,33 @@
 
       <div class="col-lg-10 d-flex justify-content-center align-items-center mt-5">
         <div class="content" data-content="0">
-          <h1 class="text-center">CSS</h1>
+          <h1 class="text-center">Events</h1>
         </div>
 
         <div class="content" data-content="1">
-          <!-- <h3 class="text-center pb-3 fw-bolder">.addClass()</h3> -->
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.addClass()</h3>
-              <p>Služi za dodavanje klase ili više klasa selektovanim elementima.</p>
+              <h3 class="fw-bolder text-center py-3">.click()</h3>
+              <p><b>.click() </b>je vrsta događaja kojim određujemo što će se dogoditi sa nekim elementom ukoliko mišem kliknemo na njega.</p>
               <hr size="5px">
-              <p> <b>- Dodavanje jedne klase</b></p>
-              <p>.addClass(<i>nazivKlase</i>)</p>
-              <p> <b>- Dodavanje vise klasa odjednom</b></p>
-              <p>.addClass(<i>naziviKlasa</i>)</p>
-              <p> <b>- Dodavanje klase ili vise klasa pomocu funkcije</b></p>
-              <p>.addClass(<i>function(){...}</i>)</p>
+              <p> 
+                jQuery je kreiran tako da veoma lako pristupa elementima (selektuje ih) i sa istom lakoćom definiše događaje za svaki od njih.<br>
+                <b>Sintaksa:</b>
+                <div class="alert alert-secondary" role="alert">
+                    $(selector).click(function(){ <br>
+                    // akcija! <br>
+                    });
+                 </div>
+              Logika funkcionisanja jQuery događaja je uvek ista: potrebno je najpre dobaviti (selektovati) element u dokumentu nad kojim je potrebno definisati događaj ($("p")). Nakon selektovanja elementa, potrebno je nad njim pozvati metodu kojom se definišu događaji.
+              </p>
+
+              <hr size="5px">
+              Događaj <b>.dblclick()</b> je veoma sličan događaju .click(), jedina razlika je u tome što selektovani element moramo klinknuti dva puta kako bi se pokrenula metoda definisana za .dblclick() događaj.
               <hr size="5px">
 
               <p>
-                U datom primeru imamo tri naslova sa tagom <b>h1</b> koji nemaju nikakve
-                dodeljene klase.
-                Nakon izvsenja skripte sa <b>addClass</b> metodom vidimo da svaki dobija klasu <b>.podvuci</b> i da
-                treci
-                naslov dobija klase <b>.oboji</b> i <b>.smanji</b> .</p>
+                Sledeći primer demonstrira pokretanje <b>.click događaja</b>, pomoću metode <b>fadeout()</b> omogućili smo da paragraf nestane kada se klikne na njega.
+              </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -235,27 +239,26 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-                  <textarea class="first" data-index="1" spellcheck="false">
-<style>
-  .oboji { color:red; }
-  .podvuci { text-decoration:underline; }
-  .smanji { font-size:18px; }
-</style>
-<body>
-        <button id="dugme">Pokreni addClass metode</button>
-        <h1>Prvi naslov</h1>
-        <h2>Drugi naslov</h2>
-        <h3>Treci naslov</h4>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $('#dugme').click(function () {
-        $("h1").addClass("podvuci");
-        $("h2").addClass("oboji smanji");
-        $("h3").addClass("podvuci smanji");
-      });
-    </script>
-</body>
-                  </textarea>
+  <textarea class="first" data-index="1" spellcheck="false">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("p").click(function(){
+  $(this).fadeOut();
+  });
+  });
+  </script>
+  </head>
+  <body>
+                    
+  <p>Klikni na ovaj paragraf kako bi nestao.</p>
+                    
+  </body>
+  </html>
+  </textarea>
                 </div>
                 <div class="col-lg-12">
                   <iframe class="second" data-index="1">
@@ -269,23 +272,27 @@
         <div class="content" data-content="2">
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <h3 class="text-center fw-bolder py-3">.removeClass()</h3>
-              <p>Služi za otklanjanje klase ili više klasa selektovanim elementima.</p>
+              <h3 class="text-center fw-bolder py-3">.hover()</h3>
+              <p>Događaj .hover () određuje dve funkcije koje će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata.</p>
               <hr size="5px">
-              <p> <b>- Otklanjanje jedne klase</b></p>
-              <p>.addClass(<i>nazivKlase</i>)</p>
-              <p> <b>- Otklanjanje vise klasa odjednom</b></p>
-              <p>.addClass(<i>naziviKlasa</i>)</p>
-              <p> <b>- Otklanjanje klase ili vise klasa pomocu funkcije</b></p>
-              <p>.addClass(<i>function</i>)</p>
+              <p>
+                <b>Sintaksa:</b>
+                <div class="alert alert-secondary" role="alert">
+                    $(selector).hover(inFunction,outFunciton)
+                 </div>
+                 Ovaj događaj pokreće <b>.mouseenter()</b> i <b>.mouseleave()</b> događaje.
+              </p>
+             
+              <hr size="5px">
+              <p>
+              Događaj .mouseenter() određuje funkciju koja će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata. <br>
+              Nasuprot .mouseenter() događaju, .mouseleave() događaj određuje funckiju koja će se pokrenuti kada pokazivač miša napusti selektovane elemente.
+              </p>
               <hr size="5px">
               <div class="col-lg-12 col-md-12 mt-2">
                 <p>
-                  U datom primeru imamo tri naslova sa tagom <b>h1</b> koji imaju dodeljene odredjene klase.
-                  Nakon izvsenja skripte sa <b>removeClass</b> metodom vidimo da svaki gubi klase koje smo definisali
-                  u
-                  pomenutoj metodi i to su klase <b>.oboji</b> i <b>.smanji</b> .</p>
-                <div class="d-flex justify-content-end">
+                  U datom primeru pogledajte funkcionisanje .hover() događaja. Naime, definisali smo dve funkcije za promenu boje pozadine, koje će se pokrenuti kada korisnik pređe pokazivačem miša preko paragrafa. Prva funkcija menja boju pozadine u žuto, a druga funkcija u roze.
+                  <div class="d-flex justify-content-end">
                   <button class="btn btn-primary try-example">Pokreni primer</button>
                 </div>
               </div>
@@ -293,26 +300,29 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-                  <textarea class="first" data-index="2" spellcheck="false">
-<style>
-  .oboji { color:red; }
-  .podvuci { text-decoration:underline; }
-  .smanji { font-size:18px; }
-</style>
-<body>
-        <button id="dugme">Pokreni addClass metode</button>
-        <h1 class="oboji smanji">Prvi naslov</h1>
-        <h2 class="podvuci smanji">Drugi naslov</h2>
-        <h3 class="oboji podvuci">Treci naslov</h4>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $('#dugme').click(function () {
-        $("h1").removeClass("oboji");
-        $("h2, h3").removeClass("podvuci smanji");
-      });
-    </script>
-</body>
-                  </textarea>
+ <textarea class="first" data-index="2" spellcheck="false">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("p").hover(function(){
+  $(this).css("background-color", "yellow");
+  }, function(){
+  $(this).css("background-color", "pink");
+  });
+  });
+  </script>
+  </head>
+  <body>
+                    
+  <p>Pređi pokazivačem miša preko paragrafa za promenu boje.</p>
+                    
+  </body>
+  </html>
+                    
+  </textarea>
                 </div>
                 <div class="col-lg-12">
                   <iframe class="second" data-index="2">
@@ -326,28 +336,26 @@
         <div class="content" data-content="3">
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <h3 class="text-center py-3 fw-bolder">.toggleClass()</h3>
-              <p>Služi za dodavanje ili otklanjanje jedne ili vise klasa selektovanim elementima. Proverava da li neka
-                klasa postoji ili ne i na osnovu toga je dodaje to jest uklanja.</p>
-              <hr size="5px">
-              <p> <b>- Dodavanje ili otklanjanje jedne klase</b></p>
-              <p>.toggleClass(<i>nazivKlase</i>)</p>
-              <p> <b>- Dodavanje ili otklanjanje vise klasa odjednom</b></p>
-              <p>.toggleClass(<i>naziviKlasa</i>)</p>
-              <p> <b>- Dodavanje ili otklanjanje klase ili vise klasa pomocu funkcije</b></p>
-              <p>.toggleClass(<i>function</i>)</p>
-              <p><b>
-                  - Takodje poseduje dodatan opcioni atribut koji odredjuje da li klasa ili klase treba da se dodaju
-                  ili
-                  otklanjaju (true=dodaju, false=otklanjaju)
-                </b></p>
-              <p>.toggleClass(<i>nazivKlase/naziviKlasa</i>, <i>true/false</i>)</p>
+              <h3 class="text-center py-3 fw-bolder">.keydown()</h3>
+              <p>
+                Događaj <b>.keydown()</b> određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi.
+              </p>
               <hr size="5px">
               <p>
-                U datom primeru imamo tri naslova sa tagom <b>h1</b> od kojih samo treci <b>h1</b> ima klasu
-                <b>.smanji</b>. Koristeci metodu <b>toggleClass</b> i metodu <b>click</b> na svaki klik jednog od
-                naslova istom se dodaju ili oduzimaju klase prosledjene metodi <b>toggleClass</b>, u nasem slucaju
-                to su klase <b>.oboji</b> i <b>.podvuci</b> .
+                <b>Sintaksa:</b>
+                <div class="alert alert-secondary" role="alert">
+                    $(selector).keydown(function(){ <br>
+                    // akcija! <br>
+                    });
+                 </div>
+                 Događaj <b>.keypress()</b> je potpuno isti kao .keydown(), pokreće se kada korisnik pritisne taster. <br>
+                 Za razliku od njih, <b>.keyup()</b> funkcioniše na suprotan način, pokreće se kada korisnik otpusti taster.
+              </p>
+              <hr size="5px">
+              <p>
+                U datom primeru možete uočiti razliku izmedju .keyup() i keydown() događaja. <br>
+                Definisali smo dve funkcije za promenu boje pozadine koje se pokreću unosom teksta u input element. Prva funkcija definisana za .keydown događaj() menja boju pozadine u žuto pritiskom na bilo koji taster. <br>
+                Nasuprot tome, druga funkcija definisana za .keyup() događaj menja boju pozadine u roze kada korisnik otpusti taster.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -356,61 +364,58 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-                  <textarea class="first" data-index="3" spellcheck="false">
-<style>
-  .oboji { color:red; }
-  .podvuci { text-decoration:underline; }
-  .smanji { font-size:18px; }
-</style>
-<body>
-        <h1>Klikni me</h1>
-        <h2 class="oboji">I mene</h2>
-        <h3 class="oboji">Mene nemoj da kliknes</h4>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $("h1").click(function () { $("h1").toggleClass("podvuci"); });
-      $("h2").click(function () { $("h2").toggleClass("oboji smanji"); });
-      $("h3").click(function () { $("h3").toggleClass("oboji"); });
-    </script>
-</body>
-                  </textarea>
+  <textarea class="first" data-index="3" spellcheck="false">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("input").keydown(function(){
+  $("input").css("background-color", "yellow");
+  });
+  $("input").keyup(function(){
+  $("input").css("background-color", "pink");
+  });
+  });
+  </script>
+  </head>
+  <body>
+                    
+  Unesi svoje ime: <input type="text">
+                    
+  </body>
+  </html>
+                    
+  </textarea>
                 </div>
                 <div class="col-lg-12">
                   <iframe class="second" data-index="3">
                   </iframe>
                 </div>
               </div>
-            </div>
+            </div>             
           </div>
         </div>
 
         <div class="content" data-content="4">
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <h3 class="text-center py-3 fw-bolder">.hasClass()</h3>
-              <p>Služi za proveravanje da li neki element ima ili nema definisanu neku klasu.</p>
-              <p>Elementima moze biti dodeljena vise klasa. U HTML-u je ovo predstavljeno razdvajanjem imena klasa
-                razmakom</p>
-              <hr size="5px">
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> &ltdiv id="div" class="prva druga">&lt/div&gt</p>
-              </div>
-              <p>Za gore naveden kod sledece dve linije koda bi vratile vrednost <b>true</b></p>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("prva");</p>
-              </div>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("druga");</p>
-              </div>
-              <p>Dok bi sledeca linija koda vratila vrednost <b>false</b></p>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("treca");</p>
-              </div>
+              <h3 class="text-center py-3 fw-bolder">.focus()</h3>
+              <p>
+                Događaj <b>.focus()</b> se koristi nad elementima čiji se sadržaj može menjati, na primer, polja formulara. Definiše funkciju koja se izvršava kada element <b>dobije fokus</b> . 
+              </p>
               <hr size="5px">
               <p>
-                U datom primeru imamo tri naslova sa tagovima <b>h1</b>, <b>h2</b> i <b>h2</b> sa nekim preodredjenim
-                klasama. Koristeci metodu <b>hasClass</b> menjamo sadrzaj naslovima sa vrednoscu koju vraca funkcija
-                hasClass (<b>true</b> ili <b>false</b>).
+                <b>Sintaksa:</b> <br>
+                $(selector).focus(function(){ <br>
+                  // akcija! <br>
+                  });<br>
+                  Događaj <b>.blur()</b> se takođe koristi nad elementima čiji se sadržaj može menjati, ali se definisana funkcija izvršava kada se sa elementa <b>napusti fokus</b>.
+              </p>
+              <hr size="5px">
+              <p>
+                U datom primeru možete videti razliku izmedju .focus() i .blur() događaja. Definisali smo dve funkcije za promenu boje pozadine polja za unos teksta. Prva funkcija (koja je definisana za .focus() događaj) menja boju pozadine u žuto kada je polje za unos teksta u fokusu, dok druga (definisana za .blur() događaj) menja boju pozadine kada se sa elementa napusti fokus.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -419,27 +424,31 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-                  <textarea class="first" data-index="4" spellcheck="false">
-<style>
-  .oboji { color:red; }
-  .podvuci { text-decoration:underline; }
-  .smanji { font-size:18px; }
-</style>
+  <textarea class="first" data-index="4" spellcheck="false">
+  <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $('input').blur(function(){
+	$(this).css("background-color", "lightblue");
+});
+});
+</script>
+</head>
 <body>
-        <button id="dugme">Pokreni hasClass metode</button>
-        <h1 class="podvuci">Prvi naslov </h1>
-        <h2 class="oboji">Drugi naslov </h2>
-        <h3 class="podvuci oboji smanji">Treci naslov </h4>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $('#dugme').click(function () {
-        $("h1").append($("h1").hasClass("smanji").toString());
-        $("h2").append($("h2").hasClass("oboji").toString());
-        $("h3").append($("h3").hasClass("podvuci").toString());
-      });
-    </script>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
 </body>
-                  </textarea>
+</html>
+          
+  </textarea>
                 </div>
                 <div class="col-lg-12">
                   <iframe class="second" data-index="4">
@@ -450,41 +459,26 @@
           </div>
         </div>
 
+
+
         <div class="content" data-content="5">
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <h3 class="text-center py-3 fw-bolder">.css()</h3>
-              <p>Sluzi sa citanje ili upisivanje vrednosti CSS svojstva nekog elementa na stranici</p>
-              <div class="html_code" spellcheck="false">
-                <p> &ltdiv id="div" style="color:red; padding:5px;">&lt/div&gt</p>
-              </div>
-              <hr size="5px">
-              <p class="text-center"><b>Citanje vrednosti CSS svojstva</b></p>
-              <div class="html_code" spellcheck="false">
-                <p> $("#div").css("color"); // vraca "red"</p>
-                <p> $("#div").css("padding"); // vraca "5px"</p>
-              </div>
-              <p>Dakle jednostavnim prosledjivanjem tacnog naziva svojstva cija nam vrednost treba istu dobijamo uz
-                pomoc funkcije <b>css</b>.</p>
-
-              <hr size="5px">
-              <p class="text-center"><b>Upisivanje vrednosti CSS svojstva</b></p>
-              <div class="html_code" spellcheck="false">
-                <p> $("#div").css("color" , "blue"); </p>
-                <p> $("#div").css("padding" , "20px");</p>
-                <p> $("#div").css("border" , "5px solid black");</p>
-              </div>
-              <p>Nakon gore izvrsenih linija koda div ce nam izgledati ovako</p>
-              <div class="html_code" spellcheck="false">
-                <p> &ltdiv id="div" style="color:blue; padding:20px; border:5px solid black;">&lt/div&gt</p>
-              </div>
+              <h3 class="text-center py-3 fw-bolder">.on()</h3>
               <p>
-                Mozemo primetiti da ne samo da mozemo da izmenim vrednost svojstva nego i jednostavno da dodamo novo
-                svojstvo i njegovu vrednost.
+                Postoji jedan specijalan metod kojim je moguće pridružiti jedan ili više događaja selektovanom elementu - metod <b>.on()</b>
               </p>
               <hr size="5px">
               <p>
-                U datom primeru mozemo videti funkciju <b>css</b> u akciji.
+                <b>Sintaksa:</b> <br>
+                $(selector).on(eventString, function(){ <br>
+                  // akcija! <br>
+                  });<br>
+                  Njegov prvi argument je naziv događaja, a drugi argument je funkcija povratnog poziva koja će se izvršiti kada se taj događaj okine nad selektovanim elementom. 
+              </p>
+              <hr size="5px">
+              <p>
+                U datom primeru smo uz pomoć <b>.on()</b> događaja, događaju <b>.click()</b> pridružili element p, čime smo omogućili nestanak ne samo jednog već svih paragrafa.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -493,28 +487,26 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-                  <textarea class="first" data-index="5" spellcheck="false">
-<style>
-  .oboji { color:red; }
-  .smanji { font-size:18px; }
-</style>
-<body>
-        <button id="dugme">Pokreni addClass metode</button>
-        <h1 class="oboji">Prvi naslov</h1>
-        <h2>Drugi naslov</h2>
-        <h3 class="smanji">Treci naslov</h4>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $('#dugme').click(function () {
-        $("h1").text($("h1").css("color")); //Uzima boju naslova
-        $("h2").css("border", "5px solid black"); //postavlja border naslovu
-        $("h2").css("border-radius", "20px"); //postavlja border radius naslovu
-        $("h3").append(" Font size: " + $("h3").css("font-size")); //ispisuje velicinu fonta naslova
-        $("h3").css("font-family", "Arial"); //postavlja font naslovu
-      });
-    </script>
-</body>
-                  </textarea>
+  <textarea class="first" data-index="5" spellcheck="false">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("p").on("click", function(){
+  $(this).hide();
+  });
+  });
+  </script>
+  </head>
+  <body>
+    
+  <p>Ako me klikneš, nestaću.</p>
+  <p>Klikni i mene!</p>
+    </body>
+    </html>  
+  </textarea>
                 </div>
                 <div class="col-lg-12">
                   <iframe class="second" data-index="5">
