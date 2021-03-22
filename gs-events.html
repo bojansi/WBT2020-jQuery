@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand p-0" href="./index.html"><img src="./img/jquery-logo-2.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,87 +81,31 @@
     <div class="row">
       <div class="col-lg-2 p-0">
         <div class="sidenav">
-          <a href="#">
-            <p class="dropdown-btn">AJAX</p>
+          <a href="./gs-ajax.html" class="dropdown-btn">
+            <p>AJAX</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-attributes.html">
+          <a href="./gs-attributes.html" class="dropdown-btn">
             <p>Attributes</p>
           </a>
-       <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>.attr()</li>
-              <li>.prop()</li>
-              <li>.html()</li>
-              <li>.val()</li>
-              <li>Example 5</li> 
-            </ul>
-          </div>-->
 
-
-          <a href="./gs-dimensions.html">
+          <a href="./gs-dimensions.html" class="dropdown-btn">
             <p>Dimensions</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-css.html">
+          <a href="./gs-css.html" class="dropdown-btn">
             <p>CSS</p>
           </a>
-<!--           <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>addClass()</li>
-              <li>removeClass()</li>
-              <li>toggleClass()</li>
-              <li>hasClass()</li>
-              <li>css()</li>
-            </ul>
-          </div> -->
 
           <a href="./gs-effects.html" class="dropdown-btn">
             <p>Effects</p>
           </a>
-          <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>show()</li>
-              <li>hide()</li>
-              <li>toggle()</li>
-              <li>fade()</li>
-              <li>slide()</li>
-              <li>animate()</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-manipulation.html">
+          <a href="./gs-manipulation.html" class="dropdown-btn">
             <p>Manipulation</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a class="dropdown-btn">
+          <a href="./gs-events.html" class="dropdown-btn">
             <p>Events</p>
           </a>
           <div class="dropdown-container" style="display:block">
@@ -172,34 +116,15 @@
               <li>.focus()</li>
               <li>.on()</li>
             </ul>
-          </div> 
+          </div>
 
-          <a href="#">
+          <a href="./gs-traversing.html" class="dropdown-btn">
             <p>Traversing</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="#">
+          <a href="./gs-utilities.html" class="dropdown-btn">
             <p>Utilities</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
-
         </div>
       </div>
 
@@ -212,25 +137,31 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="fw-bolder text-center py-3">.click()</h3>
-              <p><b>.click() </b>je vrsta događaja kojim određujemo što će se dogoditi sa nekim elementom ukoliko mišem kliknemo na njega.</p>
+              <p><b>.click() </b>je vrsta događaja kojim određujemo što će se dogoditi sa nekim elementom ukoliko mišem
+                kliknemo na njega.</p>
               <hr size="5px">
-              <p> 
-                jQuery je kreiran tako da veoma lako pristupa elementima (selektuje ih) i sa istom lakoćom definiše događaje za svaki od njih.<br>
+              <p>
+                jQuery je kreiran tako da veoma lako pristupa elementima (selektuje ih) i sa istom lakoćom definiše
+                događaje za svaki od njih.<br>
                 <b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                    $(selector).click(function(){ <br>
-                    // akcija! <br>
-                    });
-                 </div>
-              Logika funkcionisanja jQuery događaja je uvek ista: potrebno je najpre dobaviti (selektovati) element u dokumentu nad kojim je potrebno definisati događaj ($("p")). Nakon selektovanja elementa, potrebno je nad njim pozvati metodu kojom se definišu događaji.
+              <div class="alert alert-secondary" role="alert">
+                $(selector).click(function(){ <br>
+                // akcija! <br>
+                });
+              </div>
+              Logika funkcionisanja jQuery događaja je uvek ista: potrebno je najpre dobaviti (selektovati) element u
+              dokumentu nad kojim je potrebno definisati događaj ($("p")). Nakon selektovanja elementa, potrebno je nad
+              njim pozvati metodu kojom se definišu događaji.
               </p>
 
               <hr size="5px">
-              Događaj <b>.dblclick()</b> je veoma sličan događaju .click(), jedina razlika je u tome što selektovani element moramo klinknuti dva puta kako bi se pokrenula metoda definisana za .dblclick() događaj.
+              Događaj <b>.dblclick()</b> je veoma sličan događaju .click(), jedina razlika je u tome što selektovani
+              element moramo klinknuti dva puta kako bi se pokrenula metoda definisana za .dblclick() događaj.
               <hr size="5px">
 
               <p>
-                Sledeći primer demonstrira pokretanje <b>.click događaja</b>, pomoću metode <b>fadeout()</b> omogućili smo da paragraf nestane kada se klikne na njega.
+                Sledeći primer demonstrira pokretanje <b>.click događaja</b>, pomoću metode <b>fadeout()</b> omogućili
+                smo da paragraf nestane kada se klikne na njega.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -239,17 +170,17 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-  <textarea class="first" data-index="1" spellcheck="false">
+                  <textarea class="first" data-index="1" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("p").click(function(){
-  $(this).fadeOut();
-  });
-  });
+    $(document).ready(function () {
+      $("p").click(function () {
+        $(this).fadeOut();
+      });
+    });
   </script>
   </head>
   <body>
@@ -273,26 +204,31 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center fw-bolder py-3">.hover()</h3>
-              <p>Događaj .hover () određuje dve funkcije koje će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata.</p>
+              <p>Događaj .hover () određuje dve funkcije koje će se pokrenuti kada pokazivač miša pređe preko izabranih
+                elemenata.</p>
               <hr size="5px">
               <p>
                 <b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                    $(selector).hover(inFunction,outFunciton)
-                 </div>
-                 Ovaj događaj pokreće <b>.mouseenter()</b> i <b>.mouseleave()</b> događaje.
+              <div class="alert alert-secondary" role="alert">
+                $(selector).hover(inFunction,outFunciton)
+              </div>
+              Ovaj događaj pokreće <b>.mouseenter()</b> i <b>.mouseleave()</b> događaje.
               </p>
-             
+
               <hr size="5px">
               <p>
-              Događaj .mouseenter() određuje funkciju koja će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata. <br>
-              Nasuprot .mouseenter() događaju, .mouseleave() događaj određuje funckiju koja će se pokrenuti kada pokazivač miša napusti selektovane elemente.
+                Događaj .mouseenter() određuje funkciju koja će se pokrenuti kada pokazivač miša pređe preko izabranih
+                elemenata. <br>
+                Nasuprot .mouseenter() događaju, .mouseleave() događaj određuje funckiju koja će se pokrenuti kada
+                pokazivač miša napusti selektovane elemente.
               </p>
               <hr size="5px">
               <div class="col-lg-12 col-md-12 mt-2">
                 <p>
-                  U datom primeru pogledajte funkcionisanje .hover() događaja. Naime, definisali smo dve funkcije za promenu boje pozadine, koje će se pokrenuti kada korisnik pređe pokazivačem miša preko paragrafa. Prva funkcija menja boju pozadine u žuto, a druga funkcija u roze.
-                  <div class="d-flex justify-content-end">
+                  U datom primeru pogledajte funkcionisanje .hover() događaja. Naime, definisali smo dve funkcije za
+                  promenu boje pozadine, koje će se pokrenuti kada korisnik pređe pokazivačem miša preko paragrafa. Prva
+                  funkcija menja boju pozadine u žuto, a druga funkcija u roze.
+                <div class="d-flex justify-content-end">
                   <button class="btn btn-primary try-example">Pokreni primer</button>
                 </div>
               </div>
@@ -300,19 +236,19 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
- <textarea class="first" data-index="2" spellcheck="false">
+                  <textarea class="first" data-index="2" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("p").hover(function(){
-  $(this).css("background-color", "yellow");
-  }, function(){
-  $(this).css("background-color", "pink");
-  });
-  });
+    $(document).ready(function () {
+      $("p").hover(function () {
+        $(this).css("background-color", "yellow");
+      }, function () {
+        $(this).css("background-color", "pink");
+      });
+    });
   </script>
   </head>
   <body>
@@ -338,24 +274,28 @@
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.keydown()</h3>
               <p>
-                Događaj <b>.keydown()</b> određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi.
+                Događaj <b>.keydown()</b> određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na
+                tastaturi.
               </p>
               <hr size="5px">
               <p>
                 <b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                    $(selector).keydown(function(){ <br>
-                    // akcija! <br>
-                    });
-                 </div>
-                 Događaj <b>.keypress()</b> je potpuno isti kao .keydown(), pokreće se kada korisnik pritisne taster. <br>
-                 Za razliku od njih, <b>.keyup()</b> funkcioniše na suprotan način, pokreće se kada korisnik otpusti taster.
+              <div class="alert alert-secondary" role="alert">
+                $(selector).keydown(function(){ <br>
+                // akcija! <br>
+                });
+              </div>
+              Događaj <b>.keypress()</b> je potpuno isti kao .keydown(), pokreće se kada korisnik pritisne taster. <br>
+              Za razliku od njih, <b>.keyup()</b> funkcioniše na suprotan način, pokreće se kada korisnik otpusti
+              taster.
               </p>
               <hr size="5px">
               <p>
                 U datom primeru možete uočiti razliku izmedju .keyup() i keydown() događaja. <br>
-                Definisali smo dve funkcije za promenu boje pozadine koje se pokreću unosom teksta u input element. Prva funkcija definisana za .keydown događaj() menja boju pozadine u žuto pritiskom na bilo koji taster. <br>
-                Nasuprot tome, druga funkcija definisana za .keyup() događaj menja boju pozadine u roze kada korisnik otpusti taster.
+                Definisali smo dve funkcije za promenu boje pozadine koje se pokreću unosom teksta u input element. Prva
+                funkcija definisana za .keydown događaj() menja boju pozadine u žuto pritiskom na bilo koji taster. <br>
+                Nasuprot tome, druga funkcija definisana za .keyup() događaj menja boju pozadine u roze kada korisnik
+                otpusti taster.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -364,20 +304,20 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-  <textarea class="first" data-index="3" spellcheck="false">
+                  <textarea class="first" data-index="3" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("input").keydown(function(){
-  $("input").css("background-color", "yellow");
-  });
-  $("input").keyup(function(){
-  $("input").css("background-color", "pink");
-  });
-  });
+    $(document).ready(function () {
+      $("input").keydown(function () {
+        $("input").css("background-color", "yellow");
+      });
+      $("input").keyup(function () {
+        $("input").css("background-color", "pink");
+      });
+    });
   </script>
   </head>
   <body>
@@ -394,7 +334,7 @@
                   </iframe>
                 </div>
               </div>
-            </div>             
+            </div>
           </div>
         </div>
 
@@ -403,19 +343,24 @@
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.focus()</h3>
               <p>
-                Događaj <b>.focus()</b> se koristi nad elementima čiji se sadržaj može menjati, na primer, polja formulara. Definiše funkciju koja se izvršava kada element <b>dobije fokus</b> . 
+                Događaj <b>.focus()</b> se koristi nad elementima čiji se sadržaj može menjati, na primer, polja
+                formulara. Definiše funkciju koja se izvršava kada element <b>dobije fokus</b> .
               </p>
               <hr size="5px">
               <p>
                 <b>Sintaksa:</b> <br>
                 $(selector).focus(function(){ <br>
-                  // akcija! <br>
-                  });<br>
-                  Događaj <b>.blur()</b> se takođe koristi nad elementima čiji se sadržaj može menjati, ali se definisana funkcija izvršava kada se sa elementa <b>napusti fokus</b>.
+                // akcija! <br>
+                });<br>
+                Događaj <b>.blur()</b> se takođe koristi nad elementima čiji se sadržaj može menjati, ali se definisana
+                funkcija izvršava kada se sa elementa <b>napusti fokus</b>.
               </p>
               <hr size="5px">
               <p>
-                U datom primeru možete videti razliku izmedju .focus() i .blur() događaja. Definisali smo dve funkcije za promenu boje pozadine polja za unos teksta. Prva funkcija (koja je definisana za .focus() događaj) menja boju pozadine u žuto kada je polje za unos teksta u fokusu, dok druga (definisana za .blur() događaj) menja boju pozadine kada se sa elementa napusti fokus.
+                U datom primeru možete videti razliku izmedju .focus() i .blur() događaja. Definisali smo dve funkcije
+                za promenu boje pozadine polja za unos teksta. Prva funkcija (koja je definisana za .focus() događaj)
+                menja boju pozadine u žuto kada je polje za unos teksta u fokusu, dok druga (definisana za .blur()
+                događaj) menja boju pozadine kada se sa elementa napusti fokus.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -424,20 +369,20 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-  <textarea class="first" data-index="4" spellcheck="false">
+                  <textarea class="first" data-index="4" spellcheck="false">
   <!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("input").focus(function(){
-    $(this).css("background-color", "yellow");
+  $(document).ready(function () {
+    $("input").focus(function () {
+      $(this).css("background-color", "yellow");
+    });
+    $('input').blur(function () {
+      $(this).css("background-color", "lightblue");
+    });
   });
-  $('input').blur(function(){
-	$(this).css("background-color", "lightblue");
-});
-});
 </script>
 </head>
 <body>
@@ -466,19 +411,22 @@ Email: <input type="text" name="email">
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.on()</h3>
               <p>
-                Postoji jedan specijalan metod kojim je moguće pridružiti jedan ili više događaja selektovanom elementu - metod <b>.on()</b>
+                Postoji jedan specijalan metod kojim je moguće pridružiti jedan ili više događaja selektovanom elementu
+                - metod <b>.on()</b>
               </p>
               <hr size="5px">
               <p>
                 <b>Sintaksa:</b> <br>
                 $(selector).on(eventString, function(){ <br>
-                  // akcija! <br>
-                  });<br>
-                  Njegov prvi argument je naziv događaja, a drugi argument je funkcija povratnog poziva koja će se izvršiti kada se taj događaj okine nad selektovanim elementom. 
+                // akcija! <br>
+                });<br>
+                Njegov prvi argument je naziv događaja, a drugi argument je funkcija povratnog poziva koja će se
+                izvršiti kada se taj događaj okine nad selektovanim elementom.
               </p>
               <hr size="5px">
               <p>
-                U datom primeru smo uz pomoć <b>.on()</b> događaja, događaju <b>.click()</b> pridružili element p, čime smo omogućili nestanak ne samo jednog već svih paragrafa.
+                U datom primeru smo uz pomoć <b>.on()</b> događaja, događaju <b>.click()</b> pridružili element p, čime
+                smo omogućili nestanak ne samo jednog već svih paragrafa.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -487,17 +435,17 @@ Email: <input type="text" name="email">
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-  <textarea class="first" data-index="5" spellcheck="false">
+                  <textarea class="first" data-index="5" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("p").on("click", function(){
-  $(this).hide();
-  });
-  });
+    $(document).ready(function () {
+      $("p").on("click", function () {
+        $(this).hide();
+      });
+    });
   </script>
   </head>
   <body>

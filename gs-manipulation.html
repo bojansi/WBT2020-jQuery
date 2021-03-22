@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand p-0" href="./index.html"><img src="./img/jquery-logo-2.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,73 +80,28 @@
     <div class="row">
       <div class="col-lg-2 p-0">
         <div class="sidenav">
-          <a href="#">
-            <p class="dropdown-btn">AJAX</p>
+          <a href="./gs-ajax.html" class="dropdown-btn">
+            <p>AJAX</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-attributes.html">
-            <p class="dropdown-btn">Attributes</p>
+          <a href="./gs-attributes.html" class="dropdown-btn">
+            <p>Attributes</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-dimensions.html">
-            <p class="dropdown-btn">Dimensions</p>
+          <a href="./gs-dimensions.html" class="dropdown-btn">
+            <p>Dimensions</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
           <a href="./gs-css.html" class="dropdown-btn">
             <p>CSS</p>
           </a>
-          <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>addClass()</li>
-              <li>removeClass()</li>
-              <li>toggleClass()</li>
-              <li>hasClass()</li>
-              <li>css()</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-effects.html">
+          <a href="./gs-effects.html" class="dropdown-btn">
             <p>Effects</p>
           </a>
-         <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>show()</li>
-              <li>hide()</li>
-              <li>toggle()</li>
-              <li>fade()</li>
-              <li>slide()</li>
-              <li>animate()</li>
-            </ul>
-          </div>-->
 
-          <a class="dropdown-btn">
+
+          <a href="./gs-manipulation.html" class="dropdown-btn">
             <p>Manipulation</p>
           </a>
           <div class="dropdown-container" style="display:block">
@@ -157,33 +112,19 @@
               <li>.remove()</li>
               <li>.replace()</li>
             </ul>
-          </div> 
+          </div>
 
-          <a href="#">
-            <p class="dropdown-btn">Traversing</p>
+          <a href="./gs-events.html" class="dropdown-btn">
+            <p>Events</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="#">
-            <p class="dropdown-btn">Utilities</p>
+          <a href="./gs-traversing.html" class="dropdown-btn">
+            <p>Traversing</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
+
+          <a href="./gs-utilities.html" class="dropdown-btn">
+            <p>Utilities</p>
+          </a>
 
         </div>
       </div>
@@ -199,18 +140,23 @@
               <h3 class="fw-bolder text-center py-3">.clone()</h3>
               <p>jQuery metoda .clone() omogućava kopiranje DOM elemenata. </p>
               <hr size="5px">
-              <p> Koristi se vrlo jednostavno – odaberu se DOM elementi, a onda se nad izabranim skupom elemenata pozove metoda clone().</p>
-              <p>Metoda za kloniranje je vrlo korisna kada želite da kopirate i premestite ne samo DOM elemente, već i događaje vezane za klonirane DOM elemente.</p>
-            <p><b>Sintaksa:</b>
-            <div class="alert alert-secondary" role="alert">
+              <p> Koristi se vrlo jednostavno – odaberu se DOM elementi, a onda se nad izabranim skupom elemenata pozove
+                metoda clone().</p>
+              <p>Metoda za kloniranje je vrlo korisna kada želite da kopirate i premestite ne samo DOM elemente, već i
+                događaje vezane za klonirane DOM elemente.</p>
+              <p><b>Sintaksa:</b>
+              <div class="alert alert-secondary" role="alert">
                 $(selector).clone(true|false)
-             </div>
-             Kada koristite .clone () metodu, možete da izmenite klonirane elemente ili njihov sadržaj pre (ponovnog) ubacivanja u dokument.
-            </p>
-            <p>
-             Korišćenje ove metode može izazvati stvaranja elemenata sa duplikatima atributa id, koji bi trebalo da budu jedinstveni.
-             Gde je to moguće, preporučuje se izbegavanje kloniranja elemenata sa ovim atributom ili korišćenje atributa klase kao identifikatora.
-            </p>
+              </div>
+              Kada koristite .clone () metodu, možete da izmenite klonirane elemente ili njihov sadržaj pre (ponovnog)
+              ubacivanja u dokument.
+              </p>
+              <p>
+                Korišćenje ove metode može izazvati stvaranja elemenata sa duplikatima atributa id, koji bi trebalo da
+                budu jedinstveni.
+                Gde je to moguće, preporučuje se izbegavanje kloniranja elemenata sa ovim atributom ili korišćenje
+                atributa klase kao identifikatora.
+              </p>
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -220,17 +166,17 @@
             <div class="col-lg-6 py-3">
               <div class="row h-100">
                 <div class="col-lg-12">
-         <textarea class="first" data-index="1" spellcheck="false">
+                  <textarea class="first" data-index="1" spellcheck="false">
         <!DOCTYPE html>
         <html>
         <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-        $(document).ready(function(){
-          $("button").click(function(){
-            $("p").clone().appendTo("body");
+          $(document).ready(function () {
+            $("button").click(function () {
+              $("p").clone().appendTo("body");
+            });
           });
-        });
         </script>
         </head>
         <body>
@@ -258,25 +204,27 @@
           <div class="row">
             <div class="col-lg-5">
               <h3 class="fw-bolder text-center py-3">.wrap()</h3>
-              <p>Metoda .wrap () se koristi za <b>obavijanje sadržaja</b>, tačnije omogućava da se svaki podudarni element ili elementi u skupu obaviju odabranim HTML elementima.</p>
+              <p>Metoda .wrap () se koristi za <b>obavijanje sadržaja</b>, tačnije omogućava da se svaki podudarni
+                element ili elementi u skupu obaviju odabranim HTML elementima.</p>
               <p><b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                    $(selector).wrap(wrappingElement,function(index))
-                 </div>
-                 <i>wrappingElement</i> određuje koje HTML element(e) treba obaviti oko <b>svakog izabranog elementa</b>, moguće vrednosti:
-                 <ul>
-                     <li>
-                         HTML elementi
-                     </li>
-                     <li>
-                         jQuery objekti
-                     </li>
-                     <li>
-                         DOM elementi
-                     </li>
-                 </ul>
+              <div class="alert alert-secondary" role="alert">
+                $(selector).wrap(wrappingElement,function(index))
+              </div>
+              <i>wrappingElement</i> određuje koje HTML element(e) treba obaviti oko <b>svakog izabranog elementa</b>,
+              moguće vrednosti:
+              <ul>
+                <li>
+                  HTML elementi
+                </li>
+                <li>
+                  jQuery objekti
+                </li>
+                <li>
+                  DOM elementi
+                </li>
+              </ul>
               <p>
-                
+
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -285,17 +233,17 @@
             <div class="col-lg-7 py-2">
               <div class="row h-100">
                 <div class="col-lg-8 py-2">
-  <textarea class="first" data-index="2" spellcheck="false">
+                  <textarea class="first" data-index="2" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("p").wrap("<div></div>");
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p").wrap("<div></div>");
+      });
+    });
   </script>
   <style>
   div{background-color: yellow;}
@@ -319,47 +267,48 @@
                 </div>
               </div>
             </div>
-          <hr size="5px">
+            <hr size="5px">
 
-          <div class="col-lg-5 col-md-12">
-            <h3 class="fw-bolder text-center py-3">.wrapAll()</h3>
-            <p>Metoda .wrapAll() obavija određene HTML elemente oko svih izabranih elemenata.</p>
-            <p><b>Sintaksa:</b>
+            <div class="col-lg-5 col-md-12">
+              <h3 class="fw-bolder text-center py-3">.wrapAll()</h3>
+              <p>Metoda .wrapAll() obavija određene HTML elemente oko svih izabranih elemenata.</p>
+              <p><b>Sintaksa:</b>
               <div class="alert alert-secondary" role="alert">
-                  $(selector).wrapAll(wrappingElement,function(index))
-               </div>
-               <i>wrappingElement</i> određuje koje HTML element(e) treba obaviti oko izabranih elemenata, moguće vrednosti:
-               <ul>
-                   <li>
-                       HTML elementi
-                   </li>
-                   <li>
-                       jQuery objekti
-                   </li>
-                   <li>
-                       DOM elementi
-                   </li>
-               </ul>
-            <p>   
-  </p>
-  <div class="d-flex justify-content-end">
-  <button class="btn btn-primary try-example">Pokreni primer</button>
-  </div>
-  </div>
-  <div class="col-lg-7 py-2">
-  <div class="row h-100">
-  <div class="col-lg-8 py-2">
-  <textarea class="first" data-index="3" spellcheck="false">
+                $(selector).wrapAll(wrappingElement,function(index))
+              </div>
+              <i>wrappingElement</i> određuje koje HTML element(e) treba obaviti oko izabranih elemenata, moguće
+              vrednosti:
+              <ul>
+                <li>
+                  HTML elementi
+                </li>
+                <li>
+                  jQuery objekti
+                </li>
+                <li>
+                  DOM elementi
+                </li>
+              </ul>
+              <p>
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
+            </div>
+            <div class="col-lg-7 py-2">
+              <div class="row h-100">
+                <div class="col-lg-8 py-2">
+                  <textarea class="first" data-index="3" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-    $("p").wrapAll("<div></div>");
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p").wrapAll("<div></div>");
+      });
+    });
   </script>
   <style>
   div{background-color: yellow;}
@@ -376,53 +325,55 @@
 </html>
   
                   </textarea>
-              </div>
-              <div class="col-lg-4 mt-3">
-                <iframe class="second" data-index="3">
-                </iframe>
+                </div>
+                <div class="col-lg-4 mt-3">
+                  <iframe class="second" data-index="3">
+                  </iframe>
+                </div>
               </div>
             </div>
-          </div>
-          <hr size="5px">
-          <div class="col-lg-5 col-md-12">
-            <h3 class="fw-bolder text-center py-3">.wrapInner()</h3>
-            <p>Metoda .wrapInner() pravi novi element i smešta ga kao podređeni element selektovanom elementu, koji okružuje sve elemente unutar njega.</p>
-            <p><b>Sintaksa:</b>
+            <hr size="5px">
+            <div class="col-lg-5 col-md-12">
+              <h3 class="fw-bolder text-center py-3">.wrapInner()</h3>
+              <p>Metoda .wrapInner() pravi novi element i smešta ga kao podređeni element selektovanom elementu, koji
+                okružuje sve elemente unutar njega.</p>
+              <p><b>Sintaksa:</b>
               <div class="alert alert-secondary" role="alert">
-                  $(selector).wrapInner(wrappingElement,function(index))
-               </div>
-               <i>wrappingElement</i> određuje koje HTML elemente treba obaviti oko <b>sadržaja</b> svakog izabranog elementa, moguće vrednosti:
-               <ul>
-                   <li>
-                       HTML elementi
-                   </li>
-                   <li>
-                       jQuery objekti
-                   </li>
-                   <li>
-                       DOM elementi
-                   </li>
-               </ul>
-            <p>   
-  </p>
-  <div class="d-flex justify-content-end">
-  <button class="btn btn-primary try-example">Pokreni primer</button>
-  </div>
-  </div>
-  <div class="col-lg-7 py-2">
-  <div class="row h-100">
-  <div class="col-lg-8 py-2">
-  <textarea class="first" data-index="4" spellcheck="false">
+                $(selector).wrapInner(wrappingElement,function(index))
+              </div>
+              <i>wrappingElement</i> određuje koje HTML elemente treba obaviti oko <b>sadržaja</b> svakog izabranog
+              elementa, moguće vrednosti:
+              <ul>
+                <li>
+                  HTML elementi
+                </li>
+                <li>
+                  jQuery objekti
+                </li>
+                <li>
+                  DOM elementi
+                </li>
+              </ul>
+              <p>
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
+              </div>
+            </div>
+            <div class="col-lg-7 py-2">
+              <div class="row h-100">
+                <div class="col-lg-8 py-2">
+                  <textarea class="first" data-index="4" spellcheck="false">
     <!DOCTYPE html>
     <html>
     <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      $("button").click(function(){
-        $("p").wrapInner("<b></b>");
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").wrapInner("<b></b>");
+        });
       });
-    });
     </script>
     </head>
     <body>
@@ -435,16 +386,16 @@
     </body>
     </html>
                   </textarea>
-              </div>
-              <div class="col-lg-4 mt-3">
-                <iframe class="second" data-index="4">
-                </iframe>
+                </div>
+                <div class="col-lg-4 mt-3">
+                  <iframe class="second" data-index="4">
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
-        </div>        
         </div>
-      
+
 
 
 
@@ -453,29 +404,33 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="fw-bolder text-center py-3">.append()</h3>
-              <p>Metoda .append () pravi novi objekat prema zaditim parametrima i smešta ga na kraj seta elemenata unutar selektovanog elementa.</p>
+              <p>Metoda .append () pravi novi objekat prema zaditim parametrima i smešta ga na kraj seta elemenata
+                unutar selektovanog elementa.</p>
               <p><b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                  $(selector).append(content,function(index,html))
-                 </div>
-                 <i>content</i> sadržaj za umetanje, moguće vrednosti:
-               <ul>
-                   <li>
-                       HTML elementi
-                   </li>
-                   <li>
-                       jQuery objekti
-                   </li>
-                   <li>
-                       DOM elementi
-                   </li>
-               </ul>
-               <i>function(index,html)</i> određuje funkciju koja vraća sadržaj za umetanje<br>
-               <i>index</i>-vraća položaj elementa u skupu
+              <div class="alert alert-secondary" role="alert">
+                $(selector).append(content,function(index,html))
+              </div>
+              <i>content</i> sadržaj za umetanje, moguće vrednosti:
+              <ul>
+                <li>
+                  HTML elementi
+                </li>
+                <li>
+                  jQuery objekti
+                </li>
+                <li>
+                  DOM elementi
+                </li>
+              </ul>
+              <i>function(index,html)</i> određuje funkciju koja vraća sadržaj za umetanje<br>
+              <i>index</i>-vraća položaj elementa u skupu
               </p>
-              <p>Metoda .append() ubacuje navedeni sadržaj kao poslednji podređeni element (last child) svakog elementa u kolekciji jQuery, da biste ga umetnuli kao prvi podređeni element(first child), koristite <b>.prepend ()</b>.</p>
+              <p>Metoda .append() ubacuje navedeni sadržaj kao poslednji podređeni element (last child) svakog elementa
+                u kolekciji jQuery, da biste ga umetnuli kao prvi podređeni element(first child), koristite <b>.prepend
+                  ()</b>.</p>
               <p>
-                Metode .append() i <b>.appendTo()</b> izvršavaju isti zadatak. Glavna razlika je u sintaksi, metoda .appendTo() selektovani element dodaje na kraj seta elemenata unutar prosledjenog elementa.
+                Metode .append() i <b>.appendTo()</b> izvršavaju isti zadatak. Glavna razlika je u sintaksi, metoda
+                .appendTo() selektovani element dodaje na kraj seta elemenata unutar prosledjenog elementa.
               </p>
               <hr size="5px">
               <div class="d-flex justify-content-end">
@@ -483,22 +438,22 @@
               </div>
             </div>
             <div class="col-lg-6 py-3">
-            <div class="row h-100">
-            <div class="col-lg-12">
-  <textarea class="first" data-index="5" spellcheck="false">
+              <div class="row h-100">
+                <div class="col-lg-12">
+                  <textarea class="first" data-index="5" spellcheck="false">
     <!DOCTYPE html>
     <html>
     <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      $("#btn1").click(function(){
-        $("p").append(" <b>Dodat tekst</b>.");
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").append(" <b>Dodat tekst</b>.");
+        });
+        $("#btn2").click(function () {
+          $("ol").append("<li>Dodata stavka</li>");
+        });
       });
-      $("#btn2").click(function(){
-        $("ol").append("<li>Dodata stavka</li>");
-      });
-    });
     </script>
     </head>
     <body>
@@ -518,15 +473,15 @@
     </body>
     </html>                
   </textarea>
-  </div>
-  <div class="col-lg-12 mt-3">
-  <iframe class="second" data-index="5">
-  </iframe>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+                </div>
+                <div class="col-lg-12 mt-3">
+                  <iframe class="second" data-index="5">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -535,15 +490,17 @@
           <div class="row">
             <div class="col-lg-5">
               <h3 class="fw-bolder text-center py-3">.remove()</h3>
-              <p>Briše selektovani element i sve njegove podređene elemente(child) iz DOM-a. Moguće je proslediti parametar za odabir elemenata za brisanje.
+              <p>Briše selektovani element i sve njegove podređene elemente(child) iz DOM-a. Moguće je proslediti
+                parametar za odabir elemenata za brisanje.
               </p>
               <hr size="5px">
               <p><b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                  $(selector).remove()
-                 </div>
-              <p> Koristite .remove () kada želite da uklonite sam element, kao i sve u njemu. Pored samih elemenata, uklanjaju se svi povezani događaji i podaci. 
-              Da biste uklonili elemente bez uklanjanja podataka i događaja, koristite <b>.detach ()</b>.</p>
+              <div class="alert alert-secondary" role="alert">
+                $(selector).remove()
+              </div>
+              <p> Koristite .remove () kada želite da uklonite sam element, kao i sve u njemu. Pored samih elemenata,
+                uklanjaju se svi povezani događaji i podaci.
+                Da biste uklonili elemente bez uklanjanja podataka i događaja, koristite <b>.detach ()</b>.</p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -552,17 +509,17 @@
             <div class="col-lg-7">
               <div class="row h-100">
                 <div class="col-lg-8">
-   <textarea class="first" data-index="6" spellcheck="false">
+                  <textarea class="first" data-index="6" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("#div1").remove();
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div1").remove();
+      });
+    });
   </script>
   </head>
   <body>               
@@ -596,12 +553,14 @@
               <p>Slično .remove() metodi, .empty() metoda briše sve child elemente u selektovanom elementu iz DOM-a</p>
               <hr size="5px">
               <p>
-                <p><b>Sintaksa:</b>
-                  <div class="alert alert-secondary" role="alert">
-                    $(selector).empty()
-                   </div>
-                Ovom metodom uklanjaju se ne samo podređeni elementi (i ostali potomci), već i sav tekst unutar skupa podudarnih elemenata.
-                To je zato što se, prema DOM specifikaciji, bilo koji niz teksta u elementu smatra podređenim čvorom tog elementa.</p>
+              <p><b>Sintaksa:</b>
+              <div class="alert alert-secondary" role="alert">
+                $(selector).empty()
+              </div>
+              Ovom metodom uklanjaju se ne samo podređeni elementi (i ostali potomci), već i sav tekst unutar skupa
+              podudarnih elemenata.
+              To je zato što se, prema DOM specifikaciji, bilo koji niz teksta u elementu smatra podređenim čvorom tog
+              elementa.</p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -610,17 +569,17 @@
             <div class="col-lg-7">
               <div class="row h-100">
                 <div class="col-lg-8">
-  <textarea class="first" data-index="7" spellcheck="false">
+                  <textarea class="first" data-index="7" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("#div1").empty();
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div1").empty();
+      });
+    });
   </script>
   </head>
   <body>
@@ -654,14 +613,14 @@
               <h3 class="fw-bolder text-center py-3">.replaceAll()</h3>
               <p>Metod .replaceAll() zamenjuje selektovane elemente novim HTML elementima.</p>
               <hr size="5px">
-              <p> 
+              <p>
                 Sintaksa:
-                <div class="alert alert-secondary" role="alert">
+              <div class="alert alert-secondary" role="alert">
                 $(content).replaceAll(selector)
-             </div>
-             <i>content</i> određuje sadržaj za umetanje<br>
-             <i>selector</i> određuje koje elemente treba zameniti
-            </p>
+              </div>
+              <i>content</i> određuje sadržaj za umetanje<br>
+              <i>selector</i> određuje koje elemente treba zameniti
+              </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -669,17 +628,17 @@
             <div class="col-lg-7">
               <div class="row h-100">
                 <div class="col-lg-8">
-  <textarea class="first" data-index="8" spellcheck="false">
+                  <textarea class="first" data-index="8" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("<h2>Hello world!</h2>").replaceAll("p");
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("<h2>Hello world!</h2>").replaceAll("p");
+      });
+    });
   </script>
   </head>
   <body>
@@ -709,23 +668,23 @@
               <h3 class="fw-bolder text-center py-3">.replaceWith()</h3>
               <p>Metoda replaceWith() zamenjuje selektovane elemente novim sadržajem.</p>
               <hr size="5px">
-              <p> 
+              <p>
                 <b>Sintaksa:</b>
-                <div class="alert alert-secondary" role="alert">
-                  $(selector).replaceWith(content,function(index))
-                 </div>
-                 <i>content</i> određuje sadržaj za umetanje, moguće vrednosti:
-                 <ul>
-                     <li>
-                         HTML elementi
-                     </li>
-                     <li>
-                         jQuery objekti
-                     </li>
-                     <li>
-                         DOM elementi
-                     </li>
-                 </ul>
+              <div class="alert alert-secondary" role="alert">
+                $(selector).replaceWith(content,function(index))
+              </div>
+              <i>content</i> određuje sadržaj za umetanje, moguće vrednosti:
+              <ul>
+                <li>
+                  HTML elementi
+                </li>
+                <li>
+                  jQuery objekti
+                </li>
+                <li>
+                  DOM elementi
+                </li>
+              </ul>
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -734,17 +693,17 @@
             <div class="col-lg-7">
               <div class="row h-100">
                 <div class="col-lg-8">
-  <textarea class="first" data-index="9" spellcheck="false">
+                  <textarea class="first" data-index="9" spellcheck="false">
   <!DOCTYPE html>
   <html>
   <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("p:first").replaceWith("Zdravo!");
-  });
-  });
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p:first").replaceWith("Zdravo!");
+      });
+    });
   </script>
   </head>
   <body>
@@ -800,7 +759,7 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>

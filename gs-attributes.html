@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand p-0" href="./index.html"><img src="./img/jquery-logo-2.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,125 +81,50 @@
     <div class="row">
       <div class="col-lg-2 p-0">
         <div class="sidenav">
-          <a href="#">
-            <p class="dropdown-btn">AJAX</p>
+          <a href="./gs-ajax.html" class="dropdown-btn">
+            <p>AJAX</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a class="dropdown-btn">
+          <a href="./gs-attributes.html" class="dropdown-btn">
             <p>Attributes</p>
           </a>
-        <div class="dropdown-container" style="display:block">
+          <div class="dropdown-container" style="display:block">
             <ul>
               <li>.attr()</li>
               <li>.prop()</li>
               <li>.html()</li>
               <li>.val()</li>
-             <!--  <li>Example 5</li> -->
+              <!--  <li>Example 5</li> -->
             </ul>
           </div>
 
-
-          <a href="gs-dimensions.html">
+          <a href="./gs-dimensions.html" class="dropdown-btn">
             <p>Dimensions</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="gs-css.html">
+          <a href="./gs-css.html" class="dropdown-btn">
             <p>CSS</p>
           </a>
-<!--           <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>addClass()</li>
-              <li>removeClass()</li>
-              <li>toggleClass()</li>
-              <li>hasClass()</li>
-              <li>css()</li>
-            </ul>
-          </div> -->
 
           <a href="./gs-effects.html" class="dropdown-btn">
             <p>Effects</p>
           </a>
-          <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>show()</li>
-              <li>hide()</li>
-              <li>toggle()</li>
-              <li>fade()</li>
-              <li>slide()</li>
-              <li>animate()</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-manipulation.html">
+          <a href="./gs-manipulation.html" class="dropdown-btn">
             <p>Manipulation</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="./gs-events.html">
-            <p class="dropdown-btn">Events</p>
+          <a href="./gs-events.html" class="dropdown-btn">
+            <p>Events</p>
           </a>
-         <!-- <div class="dropdown-container" style="display:block">
-            <ul>
-              <li>.click()</li>
-              <li>.hover()</li>
-              <li>.keydown()</li>
-              <li>.focus()</li>
-              <li>.on()</li>
-            </ul>
-          </div>-->
 
-          <a href="#">
+          <a href="./gs-traversing.html" class="dropdown-btn">
             <p>Traversing</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
 
-          <a href="#">
+          <a href="./gs-utilities.html" class="dropdown-btn">
             <p>Utilities</p>
           </a>
-          <!-- <div class="dropdown-container">
-            <ul>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-              <li>Example 5</li>
-            </ul>
-          </div> -->
-
         </div>
       </div>
 
@@ -212,7 +137,8 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="fw-bolder text-center py-3">.attr()</h3>
-              <p>Metoda koja služi za dobijanje vrednosti atributa za određeni element ili za postavljanje jednog ili više atributa na određeni element</p>
+              <p>Metoda koja služi za dobijanje vrednosti atributa za određeni element ili za postavljanje jednog ili
+                više atributa na određeni element</p>
               <hr size="5px">
               <p> <b>- Vraćanje vrednosti atributa</b></p>
               <p>.attr(<i>naziv atributa</i>)</p>
@@ -226,14 +152,20 @@
 
               <hr size="5px">
 
-              <p>U slučaju da hoćemo da uklonimo neki atribut selektovanog elementa to ćemo uraditi pomoću metode <b>removeAttr()</b> njena sintaksa je sledeća</p>
+              <p>U slučaju da hoćemo da uklonimo neki atribut selektovanog elementa to ćemo uraditi pomoću metode
+                <b>removeAttr()</b> njena sintaksa je sledeća
+              </p>
               <p> <b>- Uklanjanje atributa sa elementa</b></p>
               <p>.removeAttr(<i>naziv atributa</i>)</p>
 
               <hr size="5px">
 
               <p>
-                U datom primeru pomoću metode <b>attr()</b> smo pokupili i ispisali vrednost <i>style</i> atributa za prvi div element. U nastavku pomoću metode <b>attr(<i>naziv atributa, vrednost</i>)</b> na drugi div je postavljena širina od 200 piksela. Pomoću iste metode za treći div je postavljen niz atributa kao što je boja slova, pozadina, visina ali i naziv klase. Metodom <b>removeAttr(<i>naziv atributa</i>)</b> sa paragrafa je uklonjen atribut <i>style</i>.
+                U datom primeru pomoću metode <b>attr()</b> smo pokupili i ispisali vrednost <i>style</i> atributa za
+                prvi div element. U nastavku pomoću metode <b>attr(<i>naziv atributa, vrednost</i>)</b> na drugi div je
+                postavljena širina od 200 piksela. Pomoću iste metode za treći div je postavljen niz atributa kao što je
+                boja slova, pozadina, visina ali i naziv klase. Metodom <b>removeAttr(<i>naziv atributa</i>)</b> sa
+                paragrafa je uklonjen atribut <i>style</i>.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -263,8 +195,8 @@
         $(".paragraf").text("Vrednost atributa style za div element je " + $(".prvi").attr("style"));
         $(".drugi").attr("style", "width:200px");
         $(".treci").attr({
-          "style":"color:white; background-color:#21609B; height:50px",
-          "class":"trecidiv"
+          "style": "color:white; background-color:#21609B; height:50px",
+          "class": "trecidiv"
         });
         $("p").removeAttr("style");
       });
@@ -285,7 +217,8 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center fw-bolder py-3">.prop()</h3>
-              <p>Pomoću ove metode dobijamo vrednost svojstva ili možemo postaviti jedno ili više svojstava za odredjeni element.</p>
+              <p>Pomoću ove metode dobijamo vrednost svojstva ili možemo postaviti jedno ili više svojstava za odredjeni
+                element.</p>
               <hr size="5px">
               <p> <b>- Vraća vrednost svojstva</b></p>
               <p>.prop(<i>naziv svojstva</i>)</p>
@@ -293,17 +226,22 @@
               <p>.prop(<i>naziv svojstva, vrednost</i>)</p>
               <p> <b>- Postavljanje svojstva i vrednost pomoću funcije</b></p>
               <p>.prop(naziv svojstva, function())</p>
-             
+
               <hr size="5px">
 
-              <p>U slučaju da hoćemo da uklonimo neko već postojeće svojstvo koristićemo metodu <b>removeProp()</b>. Pomoću ove metode uklanja se svojstvo selektovanog elementa koje je predhodno postavila metoda <b>prop()</b>.</p>
+              <p>U slučaju da hoćemo da uklonimo neko već postojeće svojstvo koristićemo metodu <b>removeProp()</b>.
+                Pomoću ove metode uklanja se svojstvo selektovanog elementa koje je predhodno postavila metoda
+                <b>prop()</b>.
+              </p>
               <p> <b>- Uklanjanje svojstva sa elementa</b></p>
               <p>.removeProp(<i>naziv svojstva</i>)</p>
               <hr size="5px">
               <div class="col-lg-12 col-md-12 mt-2">
                 <p>
-                  U datom primeru za prvi checkbox pomoću metode <b>prop(<i>naziv svojstva, vrednost</i>)</b> je postavljeno svojstvo <i>checked</i> usleg koga nam je prvi checkbox čekiran. Pomoću metode <b>prop(<i>naziv svojstva</i>)</b> vraćamo vrednost svosjtva <i>checked</i> za drugi checkbox.
-                  <div class="d-flex justify-content-end">
+                  U datom primeru za prvi checkbox pomoću metode <b>prop(<i>naziv svojstva, vrednost</i>)</b> je
+                  postavljeno svojstvo <i>checked</i> usleg koga nam je prvi checkbox čekiran. Pomoću metode
+                  <b>prop(<i>naziv svojstva</i>)</b> vraćamo vrednost svosjtva <i>checked</i> za drugi checkbox.
+                <div class="d-flex justify-content-end">
                   <button class="btn btn-primary try-example">Pokreni primer</button>
                 </div>
               </div>
@@ -331,9 +269,9 @@
       $("#cb3").prop('checked', true);
       $('#dugme').click(function () {
         $("#cb1").prop("checked", true);
-        $(".drugi").text("Vrednost svojstva za drugi checkbox: " +$("#cb2").prop("checked"));
-       // $("#cb3").removeProp('checked');
-        
+        $(".drugi").text("Vrednost svojstva za drugi checkbox: " + $("#cb2").prop("checked"));
+        // $("#cb3").removeProp('checked');
+
       });
     </script>
 </body>
@@ -365,7 +303,10 @@
 
               <hr size="5px">
               <p>
-                U datom primeru imamo tri paragrafa. Na prvi paragraf se pomoću <b>html()</b> metode vraća tekst sa sve tagovima, metodom <b>html(<i>sadržaj</i>)</b> na drugi paragraf postavljamo željeni tekst, u tom slučaju prilikom ispisa se prepoznaju svi tagovi. Na kraju, klikom na teći paragraf pomoću funkcije prebacujemo sadržaj iz htmla u tekst.  
+                U datom primeru imamo tri paragrafa. Na prvi paragraf se pomoću <b>html()</b> metode vraća tekst sa sve
+                tagovima, metodom <b>html(<i>sadržaj</i>)</b> na drugi paragraf postavljamo željeni tekst, u tom slučaju
+                prilikom ispisa se prepoznaju svi tagovi. Na kraju, klikom na teći paragraf pomoću funkcije prebacujemo
+                sadržaj iz htmla u tekst.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -386,10 +327,10 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script>
       $('#dugme').click(function () {
-        $(".prvi").text("Tekst iz prvog paragrafa vraćen pomoću metode html(): "+$(".prvi").html())
+        $(".prvi").text("Tekst iz prvog paragrafa vraćen pomoću metode html(): " + $(".prvi").html())
         $(".drugi").html("<b>jQuery</b> je mala, brza i moćna <i>JavaScript biblioteka</i>");
       });
-      $(".treci").click(function(){
+      $(".treci").click(function () {
         let htmlString = $(this).html();
         $(this).text(htmlString);
       });
@@ -402,7 +343,7 @@
                   </iframe>
                 </div>
               </div>
-            </div>             
+            </div>
 
 
           </div>
@@ -413,7 +354,9 @@
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.val()</h3>
               <p>
-                Pomoću ove metode dobijamo ili postavljamo vrednost atributu za selektovani element. Ova metoda se primarno koristi za uzimanje vrednosti raznih formi kao što su: <i>input</i>, <i>select</i>, <i>textarea</i>. Kada je neki od ovih elemenata prazan, ova metoda će vratiti nedefinisanu vrednost.
+                Pomoću ove metode dobijamo ili postavljamo vrednost atributu za selektovani element. Ova metoda se
+                primarno koristi za uzimanje vrednosti raznih formi kao što su: <i>input</i>, <i>select</i>,
+                <i>textarea</i>. Kada je neki od ovih elemenata prazan, ova metoda će vratiti nedefinisanu vrednost.
               </p>
               <hr size="5px">
               <p> <b>- Vraćanje sadržaja selektovanog elementa</b></p>
@@ -425,7 +368,9 @@
 
               <hr size="5px">
               <p>
-                U datom primeru imamo 4 teksutalna inputa. Metodom <b>val(vrednost)</b> na treći input se postavlja određeni sadržaj. Pomoću funkcije na klik dugmeta se kupe vrednosti(metoda <b>val()</b>) iz prva 3 inputa i ispisuju se u poslednji.
+                U datom primeru imamo 4 teksutalna inputa. Metodom <b>val(vrednost)</b> na treći input se postavlja
+                određeni sadržaj. Pomoću funkcije na klik dugmeta se kupe vrednosti(metoda <b>val()</b>) iz prva 3
+                inputa i ispisuju se u poslednji.
               </p>
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -452,9 +397,9 @@
         <input type="text" value="" id="txt4" style="width: 100%;"><br>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script>
-      $("#txt3").val("Svetog Ahilija 37"); 
+      $("#txt3").val("Svetog Ahilija 37");
       $('#dugme').click(function () {
-      $("#txt4").val("Ime "+ $("#txt1").val() +" prezime " + $("#txt2").val() + " adresa " + $("#txt3").val());
+        $("#txt4").val("Ime " + $("#txt1").val() + " prezime " + $("#txt2").val() + " adresa " + $("#txt3").val());
       });
     </script>
 </body>
