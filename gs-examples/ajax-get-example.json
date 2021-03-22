@@ -1,0 +1,22 @@
+{
+  "predmet": "Web tehnologije",
+  "nastavnik": "Nenad Stefanovic",
+  "asistent": "Mladen Janjic",
+  "studenti": [
+    {
+      "ime": "Milan",
+      "prezime": "Tepic",
+      "indeks": "97/2018"
+    },
+    {
+      "ime": "Bojan",
+      "prezime": "Simic",
+      "indeks": "38/2018"
+    },
+    {
+      "ime": "Dragana",
+      "prezime": "Obradovic",
+      "indeks": "30/2018"
+    }
+  ]
+}

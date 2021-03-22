@@ -1,0 +1,1 @@
+$bar = isset($_POST['bar']) ? $_POST['bar'] : "Greska";
