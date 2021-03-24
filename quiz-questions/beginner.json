@@ -1,102 +1,133 @@
 [
   {
-    "question": "Beginner pitanje 1",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
+      "question":"Na kom skriptnom jeziku je jQuery napisan? ",
+      "answers":[
+        "JavaScript",
+        "C++",
+        "C#",
+        "VBScript"
+      ],
+      "correct-answer":"JavaScript"  
+  },
+    {
+      "question":"jQuery je JSON biblioteka.",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Netačno"  
+  },
+    {
+      "question":"jQuery olakšava upotrebu JavaScript-a na veb stranici.",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Tačno"
+    },
+    {
+      "question":"Da li je jQuery biblioteka otvorenog ili zatvorenog koda? ",
+      "answers":[
+        "Otvorenog koda",
+        "Zatvorenog koda"
+      ],
+      "correct-answer":"Otvorenog koda"
+    },
+    {
+      "question":" jQuery ne podržava CSS3 selektore.",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Netačno"
+    },
+  {
+      "question":"Koji od sledećih znakova predstavlja prečicu za jQuery? ",
+      "answers":[
+        "#",
+        "&",
+        "%",
+        "$"
+      ],
+      "correct-answer":"$"  
   },
   {
-    "question": "Beginner pitanje 2",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+      "question":"jQuery je JavaScript biblioteka.",
+          "answers":[
+            "Tačno",
+            "Netačno"
+          ],
+          "correct-answer":"Tačno"
+        },
   {
-    "question": "Beginner pitanje 3",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+      "question":"Sintaksa $(selector).action() koristi se za selektovanje HTML elemenata",
+      "answers":[
+        "Tačno",
+        "Netačno"   
+   ],
+      "correct-answer":"Tačno"
+    },
+    {
+      "question":"Koji jQuery metod se koristi da se sakrije selektovani element?",
+      "answers":[
+        "hidden()",
+        "hide()",
+        "display(none)",
+        "visible(false)"
+      ],
+      "correct-answer":"hide()"
+    },
+    {
+      "question":"Metode JQuery-ja su najčešće unutar document ready događaja.",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Tačno"
+    },
   {
-    "question": "Beginner pitanje 4",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+  "question":"Metoda .toggle() služi za naizmenicno sakrivanje i otkrivanje elemenata na stranici",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Tačno"
+    },
   {
-    "question": "Beginner pitanje 5",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+  "question":"Metoda .fadeln() služi za animirano prikazivanje elementa na stranici.",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Tačno"
+    },
   {
-    "question": "Beginner pitanje 6",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+  "question":"Metoda .remove() briše selektovani element i sve njegove podređene elemente(child) iz DOM-a. ",
+      "answers":[
+        "Tačno",
+        "Netačno"
+      ],
+      "correct-answer":"Tačno"
+    },
   {
-    "question": "Beginner pitanje 7",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
+      "question":"Koju metodu koristimo za prikazivanje sakrivenih ili tek kreiranih elemenata na stranici?",
+          "answers":[
+            ".show()",
+            ".append()",
+            ".attr()",
+            ".html()"	
+          ],
+          "correct-answer":".show()"
+        },
   {
-    "question": "Beginner pitanje 8",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
-  {
-    "question": "Beginner pitanje 9",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  },
-  {
-    "question": "Beginner pitanje 10",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
-    ],
-    "correct-answer": "Odgovor 1"
-  }
-]
+  "question":"Koju metodu koristimo za čitanje ili upisivanje vrednosti CSS svojstva nekog elementa na stranici?",
+      "answers":[
+        ".add()",
+        ".css()",
+        ".toggleClass()",
+        ".hasClass()"	
+      ],
+      "correct-answer":".css()"
+    }
+  ]
+  
