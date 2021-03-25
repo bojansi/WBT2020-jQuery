@@ -1,102 +1,138 @@
 [
   {
-    "question": "Advanced pitanje 1",
+    "question": "Koja metoda šalje asinhroni ili sinhroni HTTP POST zahtev?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      ".ajax()",
+      ".get()",
+      ".post()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": ".post()"
   },
   {
-    "question": "Advanced pitanje 2",
+    "question": "Koja metoda proverava da li je jedan DOM element potomak drugog DOM elementa?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      ".contains()",
+      ".children()",
+	    ".siblings()",
+	    ".parents()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": ".contains()"
   },
   {
-    "question": "Advanced pitanje 3",
+    "question": "Koja metoda sluzi za uzimanje elementa sa odredjenim indeksom?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      ".each()",
+      ".slice()",
+	    ".siblings()",
+    	".eq()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": ".eq()"
   },
   {
-    "question": "Advanced pitanje 4",
+    "question": "Da li se jQuery metoda animate() može koristiti za animiranje bilo kog CSS svojstva?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      "Može, ali samo svojstva koja sadrže numeričke vrednosti",
+      "Može",
+	    "Ne može"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": "Može, ali samo svojstva koja sadrže numeričke vrednosti"
   },
   {
-    "question": "Advanced pitanje 5",
+    "question": "Koji od sledećih jQuery metoda se koristi za dobijanje vrednosti atributa?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      "attr()",
+      "text()",
+	    "html()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": "attr()"
   },
   {
-    "question": "Advanced pitanje 6",
+    "question": "Koji jQuery metod se koristi za izvršavanje asinhronog HTTP zahteva?",
     "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+      "jQuery.ajaxAsync()",
+      "jQuery.ajax()",
+	    "jQuery.ajaxSetup()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer": "jQuery.ajax()"
   },
   {
-    "question": "Advanced pitanje 7",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+    "question":"jQuery metod dblclick() aktivira događaj dvostrukog klika.",
+    "answers":[
+      "Tačno",
+      "Netačno"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer":"Tačno"
   },
   {
-    "question": "Advanced pitanje 8",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+    "question":"Svojstvo event.pageX vraća položaj miša u odnosu na donju ivicu dokumenta",
+    "answers":[
+      "Tačno",
+      "Netačno"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer":"Netačno"
   },
   {
-    "question": "Advanced pitanje 9",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+    "question":"Svojstvo event.pageY vraća položaj miša u odnosu na gornju ivicu dokumenta",
+    "answers":[
+      "Tačno",
+      "Netačno"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer":"Tačno"
   },
   {
-    "question": "Advanced pitanje 10",
-    "answers": [
-      "Odgovor 1",
-      "Odgovor 2",
-      "Odgovor 3",
-      "Odgovor 4"
+    "question":"Koji jQuery metod postavlja podrazumevane vrednosti za buduće AJAX zahteve?",
+    "answers":[
+      "$.getJSON()",
+      "$.param()",
+	    "$.ajaxSetup()",
+	    "$.ajax()"
     ],
-    "correct-answer": "Odgovor 1"
+    "correct-answer":"$.ajaxSetup()"
+  },
+  {
+    "question":"jQuery metod $.get() učitava podatke sa servera pomoću AJAX HTTP GET zahteva.",
+    "answers":[
+      "Tačno",
+      "Netačno"
+    ],
+    "correct-answer":"Tačno"
+  },
+  {
+    "question":"jQuery metod ajaxStop() definiše funkciju koja će se pokrenuti ",
+    "answers":[
+      "kada su svi AJAX zahtevi završeni",
+      " kada započne prvi AJAX zahtev ",
+	    " pre nego što se pošalje AJAX zahtev "
+    ],
+    "correct-answer":"kada su svi AJAX zahtevi završeni"
+  },
+  {
+    "question": "Koja metoda trazi odredjenu vrednost u nizu i vraca njegovu poziciju u nizu, ako vrednost ne postoji u nizu vraca se -1.?",
+    "answers": [
+      ".each()",
+      ".inArray()",
+	    ".contains()",
+    	".eq()"
+    ],
+    "correct-answer": ".inArray()"
+  },
+  {
+    "question": "Koja funkcija koja vrši iteracije nad nizovima i objektima?",
+    "answers": [
+      ".each()",
+      ".inArray()",
+	    ".contains()",
+    	".eq()"
+    ],
+    "correct-answer": ".each()"
+  },
+  {
+    "question":"Svojstvo event.which prikazuje ",
+    "answers":[
+      "položaj miša u odnosu na levu ivicu dokumenta",
+      "koji je taster tastature ili taster miša pritisnut za događaj",
+	    "položaj miša u odnosu na desnu ivicu dokumenta"
+    ],
+    "correct-answer":"koji je taster tastature ili taster miša pritisnut za događaj"
   }
 ]
