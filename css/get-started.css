@@ -2,7 +2,6 @@
 .sidenav{
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  height:70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
