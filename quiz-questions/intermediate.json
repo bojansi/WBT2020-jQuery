@@ -1,135 +1,150 @@
 [
   {
-      "question":"Koju metodu koristimo za dobijanje vrednosti atributa za određeni element?",
-          "answers":[
-            ".show()",
-            ".attr()",
-            ".val()",
-            ".html()"	
-          ],
-          "correct-answer":".attr()"
-        },
-{
-    "question":"Metoda .hasClass() služi za proveravanje da li neki element ima ili nema definisanu neku klasu.",
-    "answers":[
-      "Tačno",
-      "Netačno"
+    "id": "2001",
+    "question": "Koju metodu koristimo za dobijanje vrednosti atributa za određeni element?",
+    "answers": [
+      ".show()",
+      ".attr()",
+      ".val()",
+      ".html()"
     ],
-    "correct-answer":"Tačno"
-  },
-{
-    "question":"Metoda .addClass() služi za dodavanje ili otklanjanje jedne ili više klasa selektovanim elementima. ",
-    "answers":[
-      "Tačno",
-      "Netačno"
-    ],
-    "correct-answer":"Netačno"
-  },
-{
-   "question":"Metoda .toggleClass() služi za dodavanje ili otklanjanje jedne ili više klasa selektovanim elementima. ",
-    "answers":[
-      "Tačno",
-      "Netačno"
-    ],
-    "correct-answer":"Tačno"
-  },
-{
-   "question":"Koja metoda se koristi za obavijanje sadržaja?",
-    "answers":[
-      ".append()",
-      ".add()",
-      ".wrap()",
-      ".clone()"
-    ],
-    "correct-answer":".wrap()"
-  },
-{
-   "question":"Koja metoda pravi novi objekat prema zadatim parametrima?",
-    "answers":[
-      ".append()",
-      ".add()",
-      ".wrap()",
-      ".clone()"
-    ],
-    "correct-answer":".append()"
-  },
-{
-      "question":"Događaj .keydown() određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi.",
-      "answers":[
-        "Tačno",
-        "Netačno"
-      ],
-      "correct-answer":"Tačno"
-  },
-{
-      "question":"Koja događaj određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi?",
-       "answers":[
-         ".keydown()",
-         ".keyup()",
-         ".focus()",
-         ".on()"
-       ],
-       "correct-answer":".keydown()"
+    "correctAnswer": ".attr()"
   },
   {
-    "question":"Da li je moguće koristiti jQuery zajedno sa AJAX-om?",
-    "answers":[
+    "id": "2002",
+    "question": "Metoda .hasClass() služi za proveravanje da li neki element ima ili nema definisanu neku klasu.",
+    "answers": [
+      "Tačno",
+      "Netačno"
+    ],
+    "correctAnswer": "Tačno"
+  },
+  {
+    "id": "2003",
+    "question": "Metoda .addClass() služi za dodavanje ili otklanjanje jedne ili više klasa selektovanim elementima. ",
+    "answers": [
+      "Tačno",
+      "Netačno"
+    ],
+    "correctAnswer": "Netačno"
+  },
+  {
+    "id": "2004",
+    "question": "Metoda .toggleClass() služi za dodavanje ili otklanjanje jedne ili više klasa selektovanim elementima. ",
+    "answers": [
+      "Tačno",
+      "Netačno"
+    ],
+    "correctAnswer": "Tačno"
+  },
+  {
+    "id": "2005",
+    "question": "Koja metoda se koristi za obavijanje sadržaja?",
+    "answers": [
+      ".append()",
+      ".add()",
+      ".wrap()",
+      ".clone()"
+    ],
+    "correctAnswer": ".wrap()"
+  },
+  {
+    "id": "2006",
+    "question": "Koja metoda pravi novi objekat prema zadatim parametrima?",
+    "answers": [
+      ".append()",
+      ".add()",
+      ".wrap()",
+      ".clone()"
+    ],
+    "correctAnswer": ".append()"
+  },
+  {
+    "id": "2007",
+    "question": "Događaj .keydown() određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi.",
+    "answers": [
+      "Tačno",
+      "Netačno"
+    ],
+    "correctAnswer": "Tačno"
+  },
+  {
+    "id": "2008",
+    "question": "Koja događaj određuje funkciju koja će se pokrenuti korinsik pritisne bilo koji taster na tastaturi?",
+    "answers": [
+      ".keydown()",
+      ".keyup()",
+      ".focus()",
+      ".on()"
+    ],
+    "correctAnswer": ".keydown()"
+  },
+  {
+    "id": "2009",
+    "question": "Da li je moguće koristiti jQuery zajedno sa AJAX-om?",
+    "answers": [
       "Da",
       "Ne"
     ],
-    "correct-answer":"Da"
+    "correctAnswer": "Da"
   },
-{
-    "question":"Koji jQuery metod se koristi za uklanjanje selektovanih elemenata?",
-    "answers":[
+  {
+    "id": "20010",
+    "question": "Koji jQuery metod se koristi za uklanjanje selektovanih elemenata?",
+    "answers": [
       "detach()",
       "remove()",
       "Mogu se koristiti oba"
     ],
-    "correct-answer":"Mogu se koristiti oba"
+    "correctAnswer": "Mogu se koristiti oba"
   },
-{
-    "question":"Koji jQuery metod pronalazi sve parent(nadređene) elemente?",
-    "answers":[
+  {
+    "id": "2011",
+    "question": "Koji jQuery metod pronalazi sve parent(nadređene) elemente?",
+    "answers": [
       "parents();",
       "parent();",
       "children();"
     ],
-    "correct-answer":"parents();"
+    "correctAnswer": "parents();"
   },
-{
-    "question":" Kojom jQuery funkcijom se sprečava izvršenje koda pre potpunog učitavanja?",
-    "answers":[
+  {
+    "id": "2012",
+    "question": "Kojom jQuery funkcijom se sprečava izvršenje koda pre potpunog učitavanja?",
+    "answers": [
       "$(body).onload()",
       "$(document).load()",
       "$(document).ready()"
     ],
-    "correct-answer":"$(document).ready()"
+    "correctAnswer": "$(document).ready()"
   },
-{
-    "question":"Metoda .replaceAll() zamenjuje selektovane elemente novim HTML elementima.",
-    "answers":[
+  {
+    "id": "2013",
+    "question": "Metoda .replaceAll() zamenjuje selektovane elemente novim HTML elementima.",
+    "answers": [
       "Tačno",
       "Netačno"
     ],
-    "correct-answer":"Tačno"
+    "correctAnswer": "Tačno"
   },
-{
-   "question":"Koja metoda vraća visinu za neki element uključujući gornji i donji padding ali ne i ivicu(border)?",
-    "answers":[
+  {
+    "id": "2014",
+    "question": "Koja metoda vraća visinu za neki element uključujući gornji i donji padding ali ne i ivicu(border)?",
+    "answers": [
       ".width()",
       ".innerHeight()",
       ".height()",
       ".innerWidth()"
     ],
-    "correct-answer":".innerHeight()"
+    "correctAnswer": ".innerHeight()"
   },
-{
-    "question":"Događaj .hover () određuje dve funkcije koje će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata.",
-    "answers":[
+  {
+    "id": "2015",
+    "question": "Događaj .hover () određuje dve funkcije koje će se pokrenuti kada pokazivač miša pređe preko izabranih elemenata.",
+    "answers": [
       "Tačno",
       "Netačno"
     ],
-    "correct-answer":"Tačno"
+    "correctAnswer": "Tačno"
   }
 ]
