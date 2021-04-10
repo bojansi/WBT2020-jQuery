@@ -102,7 +102,7 @@
               <li>.removeClass()</li>
               <li>.toggleClass()</li>
               <li>.hasClass()</li>
-              <li>css()</li>
+              <li>.css()</li>
             </ul>
           </div>
 
@@ -134,18 +134,17 @@
         </div>
 
         <div class="content" data-content="1">
-          <!-- <h3 class="text-center pb-3 fw-bolder">.addClass()</h3> -->
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <h3 class="fw-bolder text-center py-3">.addClass()</h3>
               <p>Služi za dodavanje klase ili više klasa selektovanim elementima.</p>
               <hr size="5px">
               <p> <b>- Dodavanje jedne klase</b></p>
-              <p>.addClass(<i>nazivKlase</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>nazivKlase</i>)</p>
               <p> <b>- Dodavanje više klasa odjednom</b></p>
-              <p>.addClass(<i>naziviKlasa</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>naziviKlasa</i>)</p>
               <p> <b>- Dodavanje klase ili više klasa pomoću funkcije</b></p>
-              <p>.addClass(<i>function(){...}</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>function(){...}</i>)</p>
               <hr size="5px">
 
               <p>
@@ -154,6 +153,7 @@
                 Nakon izvšenja skripte sa <b>addClass</b> metodom vidimo da svaki dobija klasu <b>.podvuci</b> i da
                 treći
                 naslov dobija klase <b>.oboji</b> i <b>.smanji</b> .</p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -199,21 +199,20 @@
               <p>Služi za otklanjanje klase ili više klasa selektovanim elementima.</p>
               <hr size="5px">
               <p> <b>- Otklanjanje jedne klase</b></p>
-              <p>.addClass(<i>nazivKlase</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>nazivKlase</i>)</p>
               <p> <b>- Otklanjanje više klasa odjednom</b></p>
-              <p>.addClass(<i>naziviKlasa</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>naziviKlasa</i>)</p>
               <p> <b>- Otklanjanje klase ili više klasa pomoću funkcije</b></p>
-              <p>.addClass(<i>function</i>)</p>
+              <p class="alert alert-secondary">.addClass(<i>function</i>)</p>
               <hr size="5px">
-              <div class="col-lg-12 col-md-12 mt-2">
-                <p>
-                  U datom primeru imamo tri naslova sa tagom <b>h1</b> koji imaju dodeljene određene klase.
-                  Nakon izvsenja skripte sa <b>removeClass</b> metodom vidimo da svaki gubi klase koje smo definisali
-                  u
-                  pomenutoj metodi i to su klase <b>.oboji</b> i <b>.smanji</b> .</p>
-                <div class="d-flex justify-content-end">
-                  <button class="btn btn-primary try-example">Pokreni primer</button>
-                </div>
+              <p>
+                U datom primeru imamo tri naslova sa tagom <b>h1</b> koji imaju dodeljene određene klase.
+                Nakon izvsenja skripte sa <b>removeClass</b> metodom vidimo da svaki gubi klase koje smo definisali
+                u
+                pomenutoj metodi i to su klase <b>.oboji</b> i <b>.smanji</b> .</p>
+              <hr size="5px">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
             </div>
             <div class="col-lg-6 py-3">
@@ -257,11 +256,11 @@
                 klasa postoji ili ne i na osnovu toga je dodaje to jest uklanja.</p>
               <hr size="5px">
               <p> <b>- Dodavanje ili otklanjanje jedne klase</b></p>
-              <p>.toggleClass(<i>nazivKlase</i>)</p>
+              <p class="alert alert-secondary">.toggleClass(<i>nazivKlase</i>)</p>
               <p> <b>- Dodavanje ili otklanjanje više klasa odjednom</b></p>
-              <p>.toggleClass(<i>naziviKlasa</i>)</p>
+              <p class="alert alert-secondary">.toggleClass(<i>naziviKlasa</i>)</p>
               <p> <b>- Dodavanje ili otklanjanje klase ili više klasa pomoću funkcije</b></p>
-              <p>.toggleClass(<i>function</i>)</p>
+              <p class="alert alert-secondary">.toggleClass(<i>function</i>)</p>
               <p><b>
                   - Takođe poseduje dodatan opcioni atribut koji određuje da li klasa ili klase treba da se dodaju
                   ili
@@ -275,6 +274,7 @@
                 naslova istom se dodaju ili oduzimaju klase prosleđene metodi <b>toggleClass</b>, u našem slučaju
                 to su klase <b>.oboji</b> i <b>.podvuci</b> .
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -318,19 +318,19 @@
               <p>Elementima može biti dodeljeno više klasa. U HTML-u je ovo predstavljeno razdvajanjem imena klasa
                 razmakom</p>
               <hr size="5px">
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> &ltdiv id="div" class="prva druga">&lt/div&gt</p>
+              <div class="alert alert-secondary fw-bold" spellcheck="false">
+                <p> &ltdiv id="div" class="prva druga">&lt/div&gt</p>
               </div>
               <p>Za gore naveden kod sledeće dve linije koda bi vratile vrednost <b>true</b></p>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("prva");</p>
+              <div class="alert alert-secondary" spellcheck="false">
+                <p> $("#div").hasClass("prva");</p>
               </div>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("druga");</p>
+              <div class="alert alert-secondary" spellcheck="false">
+                <p> $("#div").hasClass("druga");</p>
               </div>
               <p>Dok bi sledeća linija koda vratila vrednost <b>false</b></p>
-              <div class="html_code" spellcheck="false">
-                <p class="m-0"> $("#div").hasClass("treca");</p>
+              <div class="alert alert-secondary" spellcheck="false">
+                <p> $("#div").hasClass("treca");</p>
               </div>
               <hr size="5px">
               <p>
@@ -338,6 +338,7 @@
                 klasama. Koristeći metodu <b>hasClass</b> menjamo sadržaj naslovima sa vrednošću koju vraća funkcija
                 hasClass (<b>true</b> ili <b>false</b>).
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -381,12 +382,12 @@
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.css()</h3>
               <p>Služi za čitanje ili upisivanje vrednosti CSS svojstva nekog elementa na stranici</p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p> &ltdiv id="div" style="color:red; padding:5px;">&lt/div&gt</p>
               </div>
               <hr size="5px">
               <p class="text-center"><b>Čitanje vrednosti CSS svojstva</b></p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p> $("#div").css("color"); // vraća "red"</p>
                 <p> $("#div").css("padding"); // vraća "5px"</p>
               </div>
@@ -395,13 +396,13 @@
 
               <hr size="5px">
               <p class="text-center"><b>Upisivanje vrednosti CSS svojstva</b></p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p> $("#div").css("color" , "blue"); </p>
                 <p> $("#div").css("padding" , "20px");</p>
                 <p> $("#div").css("border" , "5px solid black");</p>
               </div>
               <p>Nakon gore izvršenih linija koda div će nam izgledati ovako</p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p> &ltdiv id="div" style="color:blue; padding:20px; border:5px solid black;">&lt/div&gt</p>
               </div>
               <p>
@@ -410,8 +411,12 @@
               </p>
               <hr size="5px">
               <p>
-                U datom primeru možemo videti funkciju <b>css</b> u akciji.
+                U datom primeru možemo videti funkciju <b>css</b> u akciji. <b>Prvom naslovu</b> ce zameniti početni
+                sadržaj sa <b>RGB vrednošću njegove boje teksta</b>. <b>Drugi tekst</b> dobiti <b>border</b> debljine
+                <b>5px crne boje</b> i sa <b>radiusom od 20px</b>. <b>Trećem naslovu</b> dodajemo <b>veličinu slova</b>
+                koju koristi i <b>naziv fonta</b> koji koristi.
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -425,7 +430,7 @@
   .smanji { font-size:18px; }
 </style>
 <body>
-        <button id="dugme">Pokreni addClass metode</button>
+        <button id="dugme">Pokreni css metode</button>
         <h1 class="oboji">Prvi naslov</h1>
         <h2>Drugi naslov</h2>
         <h3 class="smanji">Treći naslov</h4>

@@ -141,13 +141,13 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija show()</p>
               <p> <b>- Bez ikakvih argumenata, odmah prikazuje element(bez ikakve animacije)</b></p>
-              <p>.show()</p>
+              <p class="alert alert-secondary">.show()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.show(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary">.show(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.show(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary">.show(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
               <p> <b>- Dodavanje klase ili više klasa pomoću funkcije</b></p>
-              <p>.show(<i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.show(<i>{...opcije...}</i>)</p>
               <p>U opcije pored gore pomenutih svojstava <b>duration(trajanje animacije)</b> i <b>easing(tip
                   tranzicije)</b>
                 moguće je odrediti
@@ -157,6 +157,12 @@
                 <li><b>done</b> - funkcija koja se poziva kada se animacija završi</li>
                 <li><b>fail</b> - funkcija koja se poziva kada se animacija ne izvrši uspešno</li>
               </ul>
+              <hr size="5px">
+              U datom primeru imamo tri naslova i svaki je <b>sakriven</b> na početku. Klikom na dugme <b>"Prikaži"</b>
+              postepeno se
+              <b>pojavljuju</b> naslovi, jedan nakon drugog. Prvi se pojavljuje <b>odmah</b> jer nismo prosledili
+              nikakvu vrednost
+              <b>funkciji show</b>, drugi se pojavljuje <b>nakon 600ms ("slow")</b> a treći <b>nakon 2500ms</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -171,7 +177,7 @@
       <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
-          <button id="prikazi">Prikaži naslove</button>
+          <button id="prikazi">Prikaži</button>
           <h1 style="display:none">Prvi naslov</h1>
           <h2 style="display:none">Drugi naslov</h2>
           <h3 style="display:none">Treći naslov</h4>
@@ -202,13 +208,13 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija hide()</p>
               <p> <b>- Bez ikakvih argumenata, odmah sakriva element(bez ikakve animacije)</b></p>
-              <p>.hide()</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.hide()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.hide(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary">.hide(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.hide(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary">.hide(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
               <p> <b>- Dodavanje klase ili više klasa pomocu funkcije</b></p>
-              <p>.hide({<i>...opcije...</i>})</p>
+              <p class="alert alert-secondary">.hide({<i>...opcije...</i>})</p>
               <p>U opcije pored gore pomenutih svojstava <b>duration(trajanje)</b> i <b>easing(tip tranzicije)</b>
                 moguće je odrediti
                 još neke dodatne parametre kao što su:</p>
@@ -218,7 +224,10 @@
                 <li><b>fail</b> - funkcija koja se poziva kada se animacija ne izvrši uspešno</li>
               </ul>
               <hr size="5px">
-
+              U datom primeru imamo tri naslova. Klikom na dugme <b>"Sakrij"</b> naslovi postepeno <b>nestaju</b>, jedan
+              nakon drugog. Prvi nestaje <b>nakon 2500ms</b>, drugi se sakriva <b>nakon 600ms ("slow")</b> a treći odmah
+              jer nismo prosledili nikakvu vrednost <b>funkciji hide</b>.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -231,7 +240,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-        <button id="sakrij">Sakrij naslove</button>
+        <button id="sakrij">Sakrij</button>
         <h1>Prvi naslov</h1>
         <h2>Drugi naslov</h2>
         <h3>Treći naslov</h4>
@@ -264,13 +273,14 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija toggle()</p>
               <p> <b>- Bez ikakvih argumenata, odmah sakriva element(bez ikakve animacije)</b></p>
-              <p>.toggle()</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.toggle()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.toggle(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.toggle(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i odredjenom tranzicijom</b></p>
-              <p>.toggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.toggle(<i>trajanje animacije</i>, <i>tip
+                  tranzicije</i>)</p>
               <p> <b>- Dodavanje klase ili više klasa pomoću funkcije</b></p>
-              <p>.toggle(<i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.toggle(<i>{...opcije...}</i>)</p>
               <p>U opcije pored gore pomenutih svojstava <b>duration(trajanje)</b> i <b>easing(tip tranzicije)</b>
                 moguće je odrediti
                 još neke dodatne parametre kao što su:</p>
@@ -279,6 +289,10 @@
                 <li><b>done</b> - funkcija koja se poziva kada se animacija završi</li>
                 <li><b>fail</b> - funkcija koja se poziva kada se animacija ne izvrši uspesno</li>
               </ul>
+              <hr size="5px">
+              U datom primeru imamo tri naslova, <b>drugi je sakriven</b>. Klikom na dugme <b>"Sakrij/otkrij"</b>
+              naslovi se <b>pojavljuju (ako su sakriveni)</b> ili <b>sakrivaju (ako su prikazani)</b> tokom određenog
+              vremenskog perioda koji su prosleđeni <b>funkciji toggle</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -292,7 +306,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-        <button id="dugme">Sakrij/otkrij naslove</button>
+        <button id="dugme">Sakrij/otkrij</button>
         <h1>Prvi naslov</h1>
         <h2 style="display:none">Drugi naslov</h2>
         <h3>Treći naslov</h4>
@@ -324,9 +338,16 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija fadeIn()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.fadeIn(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary">.fadeIn(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.fadeIn(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary">.fadeIn(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova i <b>sakriveni su na početku</b>. Klikom na dugme <b>"Otkrij naslove
+                fadeIn"</b> naslovi se postepeno <b>pojavljuju</b>, jedan
+              nakon drugog ali sa tranzicijom <b>fadeIn</b> tj. <b>postepenim povećanjem vidljivosti</b>. Prvi se
+              pojavljuje
+              <b>odmah</b>, drugi <b>nakon 1000ms</b> a treći nakon 200ms ("fast").
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -372,9 +393,16 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija fadeOut()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.fadeOut(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.fadeOut(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.fadeOut(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.fadeOut(<i>trajanje animacije</i>, <i>tip
+                  tranzicije</i>)</p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova. Klikom na dugme <b>"Sakrij naslove fadeOut"</b> naslovi se postepeno
+              <b>sakrivaju</b>, jedan
+              nakon drugog ali sa tranzicijom <b>fadeOut</b> tj. <b>postepenim smanjivanjem vidljivosti</b>. Prvi se
+              sakriva <b>odmah</b>, drugi <b>nakon 1000ms</b> a treći nakon 200ms ("fast").
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -422,9 +450,16 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija fadeToggle()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.fadeToggle(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary">.fadeToggle(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.fadeToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary">.fadeToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova, drugi je sakriven na početku. Klikom na dugme <b>"Sakrij/otkrij
+                naslove"</b> naslovi se postepeno
+              <b>sakrivaju ili otkrivaju (zavisno od trenutnog stanja)</b>, jedan
+              nakon drugog ali sa tranzicijama <b>fadeOut</b> i <b>fadeIn</b> tj. <b>postepenim smanjivanjem/povećanjem
+                vidljivosti</b>. Takođe je moguće proslediti parametar za određivanje brzine trajanja tranzicije.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -438,7 +473,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-        <button id="dugme">Sakrij/otkrij naslove</button>
+        <button id="dugme">Sakrij/otkrij naslove fadeToggle</button>
         <h1>Prvi naslov</h1>
         <h2 style="display:none">Drugi naslov</h2>
         <h3>Treći naslov</h4>
@@ -474,9 +509,20 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija slideDown()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.slideDown(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">
+                .slideDown(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.slideDown(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">
+                .slideDown(<i>trajanje animacije</i>,
+                <i>tip tranzicije</i>)
+              </p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova i <b>sakriveni su na početku</b>. Klikom na dugme <b>"Otkrij naslove
+                slideDown"</b> naslovi se postepeno
+              <b>pojavjluju</b>, jedan
+              nakon drugog ali sa tranzicijom <b>slideDown</b> tj. <b>postepenim povecanjem visine elementa</b>. Prvi se
+              pojavljuje <b>odmah</b>, drugi <b>nakon 1000ms</b> a treći nakon 200ms ("fast").
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -521,9 +567,16 @@
               <hr size="5px">
               <p> Različiti nacini da se pozove funkcija slideUp()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.slideUp(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.slideUp(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.slideUp(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.slideUp(<i>trajanje animacije</i>, <i>tip
+                  tranzicije</i>)</p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova. Klikom na dugme <b>"Sakrij naslove slideUp"</b> naslovi se postepeno
+              <b>sakrivaju</b>, jedan
+              nakon drugog ali sa tranzicijom <b>slideUp</b> tj. <b>postepenim smanjivanjem visine elementa</b>. Prvi se
+              sakriva <b>odmah</b>, drugi <b>nakon 1000ms</b> a treći nakon 200ms ("fast").
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -568,9 +621,18 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija slideToggle()</p>
               <p> <b>- Određenom dužinom trajanja</b></p>
-              <p>.slideToggle(<i>trajanje animacije</i>)</p>
+              <p class="alert alert-secondary">.slideToggle(<i>trajanje animacije</i>)</p>
               <p> <b>- Određenom dužinom trajanja i određenom tranzicijom</b></p>
-              <p>.slideToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <p class="alert alert-secondary">.slideToggle(<i>trajanje animacije</i>, <i>tip tranzicije</i>)</p>
+              <hr size="5px">
+              U datom primeru imamo tri naslova, drugi je sakriven na početku a trećem je dodat border radi lakšeg
+              prikaza slideUp i slideDown tranzicije. Klikom na dugme <b>"Sakrij naslove slideToggle"</b> naslovi se
+              postepeno
+              <b>sakrivaju ili otkrivaju (zavisno od trenutnog stanja)</b>, jedan
+              nakon drugog ali sa tranzicijama <b>slideUp</b> i <b>slideDown</b> tj. <b>postepenim
+                smanjivanjem/povećanjem
+                visine elementa</b>. Takođe je moguće proslediti parametar za određivanje brzine trajanja tranzicije.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -627,9 +689,9 @@
               <p> Različiti načini da se pozove funkcija animate()</p>
               <p> <b>- Sa objektom CSS svojstava(pored toga može se definisati i dužina trajanja animacije i tip
                   tranzicije)</b></p>
-              <p>.animate(<i>CSSsvojstva</i>, <i>[trajanje]</i>, <i>[tranzicija]</i>)</p>
+              <p class="alert alert-secondary">.animate(<i>CSSsvojstva</i>, <i>[trajanje]</i>, <i>[tranzicija]</i>)</p>
               <p> <b>- Sa objektom CSS svojstava i dodatnim opcijama</b></p>
-              <p>.animate(<i>CSSsvojstva</i>, <i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.animate(<i>CSSsvojstva</i>, <i>{...opcije...}</i>)</p>
               <p>U opcije pored gore pomenutih svojstava <b>duration(trajanje)</b>b> i <b>easing(tip tranzicije)</b>
                 moguće je odrediti
                 još neke dodatne parametre kao što su:</p>
@@ -638,6 +700,17 @@
                 <li><b>done</b> - funkcija koja se poziva kada se animacija završi</li>
                 <li><b>fail</b> - funkcija koja se poziva kada se animacija ne izvrši uspešno</li>
               </ul>
+              <hr size="5px">
+              U datom primeru imamo <b>četiri dugmeta</b> od kojih svaki pokreće drugu <b>animaciju</b>. Klikom na
+              <b>prvo dugme</b> <b>h1 elementu</b> se <b>povecava</b> <b>font size</b> na 34px i <b>razmak između
+                slova</b> na 20px, <b>h2 elementu</b> se smanjuje
+              <b>debiljina slova</b> i pomera se u <b>levo za 150px</b> dok za <b>h3 element</b> imamo dva dugmeta,
+              jedan koji pomera h3
+              <b>ulevo za 60px</b> a drugi <b>u desno za 60px</b>. Takođe se <b>
+                h3 elementima smanjuju/povećavaju vidljivost i debljina
+                slova.
+              </b>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>

@@ -137,9 +137,9 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija ajax()</p>
               <p> <b>- Prosleđivanjem URL-a nad kojim se vrši zahtev i određene opcije</b></p>
-              <p>.ajax(<i>URL</i>, <i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.ajax(<i>URL</i>, <i>{...opcije...}</i>)</p>
               <p> <b>- Samo prosleđivanjem određenih opcija</b></p>
-              <p>.ajax( <i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.ajax( <i>{...opcije...}</i>)</p>
               <hr size="5px">
               <p>Neke od potrebnih i često korišćenih opcija su: </p>
               <ul>
@@ -154,15 +154,20 @@
                 <li><b>statusCode </b> - (<i>podrazumevano: {}</i>) objekat u kome se na osnovu numeričkog status koda
                   koji
                   server vrati poziva odgovarajuća funkcija</li>
-                <li><b>dataType </b> - tip podatka koji oćekuejte od servera (npr. <i>xml</i>, <i>html</i>,
+                <li><b>dataType </b> - tip podatka koji očekujete od servera (npr. <i>xml</i>, <i>html</i>,
                   <i>script</i>, <i>json</i>, <i>text</i>)
                 </li>
               </ul>
               <hr size="5px">
+              U datom primeru smo kreirali dugme na čiji klik se šalje <b>GET zahtev</b> koji traži od servera određeni
+              <b><a href="https://thankful-wave-04eac0203.azurestaticapps.net/gs-examples/ajax-get-example.json">.json
+                  fajl</a></b> (kreiran radi testiranja ovog primera). Zahtev vraća podatke u <b>JSON formatu</b> i
+              potrebno ih je prebaciti u JavaScript objekat pomoću funkcije <b>JSON.stringify()</b>. Podatke smo na
+              kraju dodali na stranicu u vidu <b>paragrafa</b>.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
-
             </div>
             <div class="col-lg-6 py-3">
               <div class="row h-100">
@@ -211,17 +216,18 @@
               <p> <b>- Prosleđivanjem URL-a nad kojim se vrši zahtev, podataka koji se šalju sa zahtevom, callback
                   funkcije koja se pokreće kad se zahtev uspešno izvrši (sa sobom donosi i podatke od servera i status
                   kod zahteva) i tip podataka koji očekujete</b></p>
-              <p>.get(<i>URL</i>, <i>podaci</i>, <i>callback funkcija</i>, <i>tip podataka</i>)</p>
+              <p class="alert alert-secondary">.get(<i>URL</i>, <i>podaci</i>, <i>callback funkcija</i>, <i>tip
+                  podataka</i>)</p>
               <p> <b>- Samo prosleđivanjem određenih opcija</b></p>
-              <p>.get( <i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.get( <i>{...opcije...}</i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">.get() je uglavnom ekvivalent jednoj ovakvoj .ajax() funkciji</p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p>$.ajax({<br>
-                  &nbsp;url: url,<br>
-                  &nbsp;data: data,<br>
-                  &nbsp;success: success,<br>
-                  &nbsp;dataType: dataType<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;url: url,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;data: data,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;success: success,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dataType: dataType<br>
                   });</p>
               </div>
               <hr size="5px">
@@ -243,10 +249,15 @@
                 </li>
               </ul>
               <hr size="5px">
+              U datom primeru smo kreirali dugme na čiji klik se šalje <b>GET zahtev</b> koji traži od servera određeni
+              <b><a href="https://thankful-wave-04eac0203.azurestaticapps.net/gs-examples/ajax-get-example.json">.json
+                  fajl</a></b> (kreiran radi testiranja ovog primera). Zahtev vraća podatke u <b>JSON formatu</b> i
+              potrebno ih je prebaciti u JavaScript objekat pomoću funkcije <b>JSON.stringify()</b>. Podatke smo na
+              kraju dodali na stranicu u vidu <b>paragrafa</b>.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
-
             </div>
             <div class="col-lg-6 py-3">
               <div class="row h-100">
@@ -288,18 +299,19 @@
               <p> <b>- Prosleđivanjem URL-a nad kojim se vrši zahtev podataka koji se šalju sa zahtevom, callback
                   funkcije koja se pokreće kad se zahtev uspešno izvrši (sa sobom donosi i podatke od servera i status
                   kod zahteva) i tip podataka koji očekujete</b></p>
-              <p>.post(<i>URL</i>, <i>podaci</i>, <i>callback funkcija</i>, <i>tip podataka</i>)</p>
+              <p class="alert alert-secondary">.post(<i>URL</i>, <i>podaci</i>, <i>callback funkcija</i>, <i>tip
+                  podataka</i>)</p>
               <p> <b>- Samo prosleđivanjem određenih opcija</b></p>
-              <p>.post( <i>{...opcije...}</i>)</p>
+              <p class="alert alert-secondary">.post( <i>{...opcije...}</i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">.post() je uglavnom ekvivalent jednoj ovakvoj .ajax() funkciji</p>
-              <div class="html_code" spellcheck="false">
+              <div class="alert alert-secondary" spellcheck="false">
                 <p>$.ajax({
-                  &nbsp;type: "POST",<br>
-                  &nbsp;url: url,<br>
-                  &nbsp;data: data,<br>
-                  &nbsp;success: success,<br>
-                  &nbsp;dataType: dataType<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;type: "POST",<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;url: url,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;data: data,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;success: success,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;dataType: dataType<br>
                   });</p>
               </div>
               <hr size="5px">
@@ -321,10 +333,18 @@
                 </li>
               </ul>
               <hr size="5px">
+              U datom primeru smo kreirali tri <b>input</b> polja za tekst i jedno dugme. Klikom na dugme šaljemo
+              <b>POST zahtev</b>
+              određenoj stranici, u našem slučaju <b>post_example.php</b> koji smo kreirali u svrhe testiranja, i sa
+              zahtevom šaljemo i podatke iz input elemenata. Stranica dobija podatke iz input polja i izvrši neke izmene
+              nad njima i šalje podatke nazad. Ovaj određeni primer uzima i<b>
+                me, prezime godinu
+                rođenja
+              </b> i vraća poruku u formatu <b>"Zovem se [ime] [prezime] i imam (2021 - [godiste]) godina/e/u."</b>.
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
-
             </div>
             <div class="col-lg-6 py-3">
               <div class="row h-100">

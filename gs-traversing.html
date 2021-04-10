@@ -143,15 +143,26 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija add()</p>
               <p> <b>- Prosleđivanjem CSS selektora</b></p>
-              <p>.add(<i> selektor </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                  selektor </i>)</p>
               <p> <b>- Prosleđivanjem više elemenata</b></p>
-              <p>.add(<i> elementi </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                  elementi </i>)</p>
               <p> <b>- Prosleđivanjem HTML elementa</b></p>
-              <p>.add(<i> html </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i> html
+                </i>)</p>
               <p> <b>- Prosleđivanjem dodatnog jQuery objekta</b></p>
-              <p>.add(<i> elementi </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                  elementi </i>)</p>
               <hr size="5px">
-              Opis primera:
+              U datom primeru imamo određene <b>span, p h3 i elemente</b> kojima ćemo koristeći <b>funkciju add</b>
+              dodeliti neke <b>css stilove</b>. Prvo smo selektovali <b>span element</b> i dodali toj selekciji i <b>p
+                element</b> i onda obojici <b>css</b> metodom dodelili <b>boju pozadine crvenu</b>. Kasnije smo uradili
+              istu stvar ali videli da je moguće selektovati pomoću <b>id-a ili class-e elementa</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -174,9 +185,7 @@
       <script>
         $("span").add("p").css("background-color", "red");
         $("span").add($("#paragraf")).css("border", "5px solid green");
-        let drugip = $("#paragraf");
-        let naslov = $(".naslov");
-        $("i").add(naslov).add(drugip).css({ "color": "white", "background-color": "black" });
+        $("i").add($("#paragraf")).add($(".naslov")).css({ "color": "white", "background-color": "black" });
       </script>
   </body>
                     </textarea>
@@ -199,16 +208,25 @@
               <hr size="5px">
               <p> Različiti nacini da se pozove funkcija children()</p>
               <p> <b>- Bez prosleđivanja parametara, vraća "decu" elementa nad kojim je pozvana funkcija</b></p>
-              <p>.children()</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary">.children()
+              </p>
               <p> <b>- Prosleđivanje selektora koji filtrira "decu" </b></p>
-              <p>.children(<i> selektor </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary" class="alert alert-secondary">.children(<i>
+                  selektor </i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold"><b>children()</b> funkcija je slična funkciji <b>find()</b> ali za razliku od
                 <b>find()</b>, funkcija <b>children()</b> proverava DOM stablo samo jedan nivo niže, za razliku od
                 <b>find()</b> koji moze ići nivo niže
               </p>
               <hr size="5px">
-              Opis primera:
+              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju children</b> smo prvo
+              selektovali
+              <b>"decu"</b> od svih div-ova i dali im <b>sivu pozadinu</b>. Posle smo selektovali isto <b>"decu"</b>
+              svih div-ova ali posle <b>filtrirali</b> decu sa prosleđenim argumentom tj. <b>id ili class</b> koji
+              <b>"dete" mora</b> da sadrži i naš filter će jedino da selektuje <b>drugi paragraf</b> i njemu će
+              postaviti <b>bela slova, deblja slova i padding 10px</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -262,13 +280,25 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija parents()</p>
               <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
-              <p>.parents()</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary">.parents()
+              </p>
               <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
-              <p>.parents(<i> selektor </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+                class="alert alert-secondary">.parents(<i>
+                  selektor </i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">Pored funkcije parents() postoji i funkcija parent(), dok parents() vraća sve
                 roditelje elementa, parent() ide samo jedan nivo iznad u DOM stablu i vraća samo prvog "roditelja".
               </p>
+              <hr size="5px">
+              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju parents</b> smo prvo
+              selektovali
+              <b>"roditelje"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju odradili
+              za id-eve <b>"drugi" i "treci"</b> ali da im <b>"roditelji"</b> moraju biti div-ovi i dodelili im boju <b>
+                pozadina roze i
+                crvenu
+              </b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -319,13 +349,24 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija siblings()</p>
               <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
-              <p>.siblings()</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings()
+              </p>
               <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
-              <p>.siblings(<i> selektor </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings(<i>
+                  selektor </i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">Za "roditelja" nekog elementa možemo gledati nivo iznad u DOM stablu, za "decu"
                 nivo ispod a za "braću i sestre" gledamo sve što se nalazi na istom nivou kao i dati element.
               </p>
+              <hr size="5px">
+              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju siblings</b> smo prvo
+              selektovali
+              <b>"braću i sestre"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju
+              odradili
+              za id <b>"treci"</b> ali da mu <b>"braća i sestre"</b> mora biti h3 element i dodelili im
+              boju <b>
+                pozadina crvenu
+              </b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -374,13 +415,18 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija eq()</p>
               <p> <b>- Prosleđivanje pozitivnog broja</b></p>
-              <p>.eq(<i> indeks </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeks </i>)</p>
               <p> <b>- Prosleđivanje negativnog broja</b></p>
-              <p>.eq(<i> indeksOdPozadi </i>)</p>
+              <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeksOdPozadi </i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">U drugim programskim jezicima ovo možemo videti u sledećem fomartu
                 <b>nizElemenata[4].</b>.
               </p>
+              <hr size="5px">
+              U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
+                eq</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafu sa <b>indeksom
+                0</b> smo <b>podebljali slova</b>, sa <b>indeksom 2</b> promenili <b>boju slova u belo a pozadine u
+                crno</b> i na kraju sa <b>indeksom 4</b> stavili <b>plavi border debljine 3px i padding 5px</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -432,13 +478,20 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija slice()</p>
               <p> <b>- Prosleđivanjem početnog indeksa</b></p>
-              <p>.slice(<i> početak </i>)</p>
+              <p class="alert alert-secondary">.slice(<i> početak </i>)</p>
               <p> <b>- Prosleđivanjem početnog i krajnjeg indeksa</b></p>
-              <p>.slice(<i> početak </i>, <i> kraj </i>)</p>
+              <p class="alert alert-secondary">.slice(<i> početak </i>, <i> kraj </i>)</p>
               <hr size="5px">
               <p class="mt-2 fw-bold">
-
               </p>
+              <hr size="5px">
+              U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
+                slice</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafima od <b>
+                indeksa
+                2 do kraja selekcije
+              </b> podebljavamo slova. Paragrafima sa <b>indeksom između vrednosti 1 i 3</b> staviti boju slova
+              belu i pozadine crnu. <b>Počevši od trećeg paragrafa od pozadi pa sve do poslednjeg paragrafa</b> staviti
+              plavi border debljine 3px i padding 5px.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -464,7 +517,7 @@
       "color": "white",
       "background-color": "black"
     });
-    $("p").slice(-2, -1).css({
+    $("p").slice(-3, -1).css({
       "border": "3px solid blue",
       "padding": "5px"
     });

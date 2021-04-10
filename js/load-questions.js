@@ -65,7 +65,6 @@ function loadQuestions(level){
       });
       if((correct+wrong) == 10){
         console.log("tacnih : " + correct + ", netacnih : " + wrong);
-        //$(".questions").slideUp(1000);
         $(".end-message > div > .rezultat").html("Vaš rezultat iznosi <br>Tacnih : " + correct + "<br>Netacnih : " + wrong)
         $(".end-message").slideDown(500);
       }

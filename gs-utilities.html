@@ -140,11 +140,14 @@
               <hr size="5px">
               <p> Sintaksa za poziv funkcije contains()</p>
               <p> <b>- Prosleđivanjem dva DOM elementa za proveru</b></p>
-              <p>.contains(<i> DOMElement1 </i>, <i> DOMElement2 </i>)</p>
+              <p class="alert alert-secondary">.contains(<i> DOMElement1 </i>, <i> DOMElement2 </i>)</p>
               <p><b>DOMElement1</b> - element koji možda sadrži DOMElement2</p>
               <p><b>DOMElement2</b> - element koji je možda "potomak" od DOMElement1</p>
               <hr size="5px">
-              Opis primera:
+              U datom primeru se elementima dodeljuje rezultat funkcije <b>.contains()</b> (true ili false). U prvom
+              redu se proverava da li <b>body</b> sadrži element sa klasom <b>span1</b>.
+              U drugom redu se proverava da li element sa klasom <b>div1</b> sadrži element sa klasom <b>prvi</b>. U
+              trećem redu se proverava da li element sa klasom <b>div1</b> sadrži element sa klasom <b>naslov</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -190,11 +193,14 @@
               <hr size="5px">
               <p> Različiti načini da se pozove funkcija each()</p>
               <p><b> - Prosleđvanja niza i funkcije koja se izvršava kroz svaku iteraciju</b></p>
-              <p>.each(<i>niz</i>, <i>funkcija(indeksElementa, vrednostElementa)</i>)</p>
+              <p class="alert alert-secondary">.each(<i>niz</i>, <i>funkcija(indeksElementa, vrednostElementa)</i>)</p>
               <p><b> - Prosleđvanja objekta i funkcije koja se izvršava kroz svaku iteraciju</b></p>
-              <p>.each(<i>objekat</i>, <i>funkcija(imenovanoSvojstvo, vrednostSvojstva)</i>)</p>
+              <p class="alert alert-secondary">.each(<i>objekat</i>, <i>funkcija(imenovanoSvojstvo,
+                  vrednostSvojstva)</i>)</p>
               <hr size="5px">
-              Opis primera:
+              U datom primeru napravljen je niz elemenata (jabuka, banana, nar, šljiva, ananas) i jedan JavaScript
+              objekat i pomoću funkcije <b>.each</b> su ispisani elementi niza sa odgovarajućim indeksima i elementi
+              objekta sa odgovarajućim svojstvima.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -248,7 +254,14 @@
               <p> <b>- Prosleđivanjem vrednosti koja se traži, niza u kome se traži vrednost i opcioni parametar koji
                   označava od kog indeksa krenuti pretragu (podrazumevano se kreće od 0 to jest prvog elmenta niza)</b>
               </p>
-              <p>.inArray(<i>trazenaVrednost</i>, <i>niz</i>, [<i>indeksOdKogKrenuti</i>])</p>
+              <p class="alert alert-secondary">.inArray(<i>trazenaVrednost</i>, <i>niz</i>, [<i>indeksOdKogKrenuti</i>])
+              </p>
+              <hr size="5px">
+              U datom primeru smo kreirali dva niza, <b>niz1</b> i <b>niz2</b> sa određenim elementima i iskoristićemo
+              funkciju<b>.inArray</b> na više različitih načina. Proverićemo da li niz1 sadrži reč nar, da li niz1
+              sadrži
+              reč<b>kruška</b>, da li <b>niz2</b> sadrži broj <b>65</b> i da li <b>niz1</b> sadrži reč <b>jabuka</b>
+              (pretragu početi od <b>3. elementa)</b>.
               <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
@@ -263,17 +276,17 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-  <p>niz1 = ["jabuka", "banana", "nar", "šljiva", "ananas"]</p>
+  <p>niz1 = ["jabuka", "banana", "nar", "šljiva", "ananas", "malina"]</p>
   <p>niz2 = [2, 2, 3, 8, 90, 65, 43, 23]</p>
   <div>    
   </div>
   <script>
     let niz1 = ["jabuka", "banana", "nar", "šljiva", "ananas"];
     let niz2 = [2, 2, 3, 8, 90, 65, 43, 23];
-    $("div").append("<p>nar u nizu 1: " + $.inArray("nar", niz1) + "</p>");
-    $("div").append("<p>kruška u nizu 1: " + $.inArray("kruška", niz1) + "</p>");
-    $("div").append("<p>broj 65 u nizu 2: " + $.inArray(65, niz2) + "</p>");
-    $("div").append("<p>broj 8 u nizu 2 počevsi pretragu od 6. elementa: " + $.inArray("jabuka", niz1, 5) + "</p>");
+    $("div").append("<p>nar u nizu1: " + $.inArray("nar", niz1) + "</p>");
+    $("div").append("<p>kruška u nizu1: " + $.inArray("kruška", niz1) + "</p>");
+    $("div").append("<p>broj 65 u nizu2: " + $.inArray(65, niz2) + "</p>");
+    $("div").append("<p>jabuka u nizu1 počevsi pretragu od 3. elementa: " + $.inArray("jabuka", niz1, 2) + "</p>");
   </script>
 </body>
                     </textarea>

@@ -86,18 +86,13 @@
 }
 
 /*------------------------------------------------------*/
-.html_code{
-  margin: 0.5rem 0rem;
-  width:100%;
-  background-color: #292929;
-  box-shadow: 0 1px 1px rgb(22, 22, 22);
-  padding: 0.8rem 1rem;
-  color:rgb(201, 201, 201);
-  font-size: 1rem;
-  border-radius: 20px;
-}
-.html_code > p{
+
+.alert > p{
   margin:0;
+  font-weight: 600;
+}
+.alert{
+  font-weight: 600;
 }
 
 .first {

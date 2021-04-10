@@ -153,16 +153,15 @@
               dokumentu nad kojim je potrebno definisati događaj ($("p")). Nakon selektovanja elementa, potrebno je nad
               njim pozvati metodu kojom se definišu događaji.
               </p>
-
               <hr size="5px">
               Događaj <b>.dblclick()</b> je veoma sličan događaju .click(), jedina razlika je u tome što selektovani
               element moramo klinknuti dva puta kako bi se pokrenula metoda definisana za .dblclick() događaj.
               <hr size="5px">
-
               <p>
                 Sledeći primer demonstrira pokretanje <b>.click događaja</b>, pomoću metode <b>fadeout()</b> omogućili
                 smo da paragraf nestane kada se klikne na njega.
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -228,6 +227,8 @@
                   U datom primeru pogledajte funkcionisanje .hover() događaja. Naime, definisali smo dve funkcije za
                   promenu boje pozadine, koje će se pokrenuti kada korisnik pređe pokazivačem miša preko paragrafa. Prva
                   funkcija menja boju pozadine u žuto, a druga funkcija u roze.
+                </p>
+                <hr size="5px">
                 <div class="d-flex justify-content-end">
                   <button class="btn btn-primary try-example">Pokreni primer</button>
                 </div>
@@ -274,7 +275,8 @@
             <div class="col-lg-6 col-md-12">
               <h3 class="text-center py-3 fw-bolder">.keydown()</h3>
               <p>
-                Događaj <b>.keydown()</b> određuje funkciju koja će se pokrenuti kada korinsik pritisne bilo koji taster na
+                Događaj <b>.keydown()</b> određuje funkciju koja će se pokrenuti kada korinsik pritisne bilo koji taster
+                na
                 tastaturi.
               </p>
               <hr size="5px">
@@ -297,6 +299,7 @@
                 Nasuprot tome, druga funkcija definisana za .keyup() događaj menja boju pozadine u roze kada korisnik
                 otpusti taster.
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -347,7 +350,7 @@
                 formulara. Definiše funkciju koja se izvršava kada element <b>dobije fokus</b> .
               </p>
               <hr size="5px">
-              <p>
+              <p class="alert alert-secondary">
                 <b>Sintaksa:</b> <br>
                 $(selector).focus(function(){ <br>
                 // akcija! <br>
@@ -362,6 +365,7 @@
                 menja boju pozadine u žuto kada je polje za unos teksta u fokusu, dok druga (definisana za .blur()
                 događaj) menja boju pozadine kada se sa elementa napusti fokus.
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
@@ -415,7 +419,7 @@ Email: <input type="text" name="email">
                 - metod <b>.on()</b>
               </p>
               <hr size="5px">
-              <p>
+              <p class="alert alert-secondary">
                 <b>Sintaksa:</b> <br>
                 $(selector).on(eventString, function(){ <br>
                 // akcija! <br>
@@ -428,6 +432,7 @@ Email: <input type="text" name="email">
                 U datom primeru smo uz pomoć <b>.on()</b> događaja, događaju <b>.click()</b> pridružili element p, čime
                 smo omogućili nestanak ne samo jednog već svih paragrafa.
               </p>
+              <hr size="5px">
               <div class="d-flex justify-content-end">
                 <button class="btn btn-primary try-example">Pokreni primer</button>
               </div>
