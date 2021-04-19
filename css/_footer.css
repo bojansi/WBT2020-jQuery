@@ -1,52 +1,65 @@
 /*---------------------FOOTER----------------------------------*/
 
-.footer{
-  background-image: url('.././img/footer2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  padding-top: 85px;
-  padding-bottom: 20px;
-  bottom: 0;
-  
+.footer {
+	background-image: url('.././img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	bottom: 0;
+	box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
+	-webkit-box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
+	-moz-box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
 }
 
-.footer-list{
-  list-style-type: none;
-  text-decoration: none;
-  padding-left: 0;
-  line-height: 35px;
+.icons > a {
+	text-decoration: none;
+	color: white;
 }
 
-.footer-list > li > a{
-  text-decoration: none;
-  color: white;
-  position: relative;
-  /* display: block;*/
-   padding-bottom:5px;
+.icons > a:hover {
+	color: #21609b;
+	cursor: pointer;
+	transition: all 300ms ease-in;
+	transform: scale(1.2);
 }
 
+.footer-list {
+	list-style-type: none;
+	text-decoration: none;
+	padding-left: 0;
+	line-height: 40px;
+}
+
+.footer-list > li > a {
+	text-decoration: none;
+	color: white;
+	position: relative;
+	padding-bottom: 5px;
+	font-size: 1.2rem;
+}
 
 .footer-list > li > a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left:-10%;
-  background-color: #21609B;
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  border-radius: 20px;
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: 0;
+	left: -10%;
+	background-color: #21609b;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+	border-radius: 20px;
 }
 
 .footer-list > li > a:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .footer-list > li > a:hover:before {
-  cursor: pointer;
-  visibility: visible;
-  width: 120%;
+	cursor: pointer;
+	visibility: visible;
+	width: 120%;
 }
