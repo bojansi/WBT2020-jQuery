@@ -121,4 +121,21 @@
   box-shadow: 0 1px 1px rgb(22, 22, 22);
   border-radius: 20px;
 }
- 
+
+.get-s p,
+.get-s p > * {
+    margin: 1.5rem 0rem;
+}
+
+.get-s * > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.get-s * > * {
+    font-size: 1.3rem;
+}
+
+.get-s > .row > div:first-child {
+    border-right: 5px solid rgb(80, 80, 80);
+}
