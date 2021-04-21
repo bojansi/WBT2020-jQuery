@@ -9,8 +9,8 @@
 
 /*----------------------HEADER FOR ALL PAGES----------------------------------*/
 * {
-	margin: 0;
-	padding: 0;
+	/* margin: 0;
+	padding: 0; */
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;
 	box-sizing: border-box;
@@ -18,7 +18,7 @@
 }
 @media (max-width: 992px) {
 	* {
-		font-size: 14px;
+		font-size: 0.7rem;
 	}
 }
 

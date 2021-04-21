@@ -9,9 +9,9 @@
 	padding-top: 70px;
 	padding-bottom: 30px;
 	bottom: 0;
-	box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
-	-webkit-box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
-	-moz-box-shadow: 8px 64px 22px -46px rgba(255, 255, 255, 1) inset;
+	box-shadow: 8px 64px 15px -46px rgba(255, 255, 255, 1) inset;
+	-webkit-box-shadow: 8px 64px 15px -46px rgba(255, 255, 255, 1) inset;
+	-moz-box-shadow: 8px 64px 15px -46px rgba(255, 255, 255, 1) inset;
 }
 
 .icons {

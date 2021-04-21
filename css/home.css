@@ -95,3 +95,20 @@
 .related-projects > .card-footer > a:active {
 	border: 0;
 }
+@media (max-width: 576px) {
+    #fixed3 > h1 {
+        font-size: 3rem !important;
+        padding: 0 40px;
+    }
+	.header > .container >h1{
+		font-size: 3rem !important;
+	}
+}
+@media (max-width: 992px) {
+  .header-left > p{
+    font-size: 1.6rem !important;
+  }
+  .card-text{
+    font-size: 1.2rem !important;
+  }
+}

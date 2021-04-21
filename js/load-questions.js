@@ -24,12 +24,12 @@ function loadQuestions(level){
         q += "<div class='col-lg-6 py-3'>";
         q += "<div class='question h-100 '>";
         q += "<span class='d-none' id='q-id'>" + element.id + "</span>";
-        q += "<h5 class='py-3 fw-bold'>" + element.question + "</h5>";
+        q += "<h5 class='py-3 fw-bold'>" + element.question + "</h5><div class='row'>";
         element.answers.forEach((element2, key2) => {
-          q += "<div><input class='form-check-input' type='radio' name='radio"+(key+1)+"' id='radioId"+(key+1)+(key2+1)+" required'>";
+          q += "<div class='col-lg-12 col-md-12 col-6 ans'><input class='form-check-input' type='radio' name='radio"+(key+1)+"' id='radioId"+(key+1)+(key2+1)+" required'>";
           q += "<label class='form-check-label' for='radioId"+(key+1)+(key2+1)+"'>&nbsp&nbsp"+element2+"</label></div>";
         })     
-        q += "</div></div>";
+        q += "</div></div></div>";
       }
     }); 
 

@@ -8,7 +8,7 @@
   border-radius: 15px 5px 15px 5px;
   transition: all 250ms ease-out;
   letter-spacing: 0.5px;
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .navbar-nav > .active > a{
@@ -28,7 +28,7 @@
 }
 
 .dropdown-menu > li > a{
-  font-weight: 600;  
+  font-weight: 600;
   color:rgba(0,0,0,.55);
 }
 
@@ -52,4 +52,15 @@
   border-bottom-right-radius: 25px;
   color: white !important;
   transition: all 250ms ease-in;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav > li > a{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav > li > a{
+  font-size: 1.3rem;
+}
 }
