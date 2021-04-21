@@ -28,6 +28,10 @@
 	background-size: cover;
 }
 
+#fixed3 > a{
+	text-decoration: none;
+}
+
 #fixed3 > h1 {
 	color: black;
 	text-shadow: 5px 5px 0 white, -2px -1px 0 white, 1px -1px 0 white,
@@ -83,6 +87,7 @@
 	justify-self: center;
 	width: 150px;
 	border-radius: 15px;
+	text-decoration: none;
 }
 
 .related-projects > .card-footer > a:hover {

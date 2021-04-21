@@ -85,7 +85,9 @@ background: linear-gradient(225deg, rgba(48,48,48,1) 0%, rgba(108,108,108,0.2007
 background: linear-gradient(36deg, rgba(48,48,48,1) 0%, rgba(108,108,108,0.2007177871148459) 50%, rgba(33,96,155,1) 100%);
 } 
 
-
+.card-content > p > a{
+  text-decoration: none;
+}
 .box .card-content{
   position: absolute;
   left: 10px;
