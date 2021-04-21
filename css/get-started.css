@@ -157,6 +157,7 @@
 	}
 	.dropdown-container > ul > li {
 		text-align: center;
+		font-size: 1.3rem;
 	}
 }
 
@@ -167,5 +168,15 @@
 	.sidenav{
 		display:none;
 	}
+	.dropdown-container > ul > li {
+		text-align: center;
+	}
+	.dropdown-container > ul > li:before {
+		transform: translateX(25%);
+	}
+	.dropdown-container > ul {
+		padding-left: 0px !important;
+	}
+	
 }
 
