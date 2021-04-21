@@ -61,10 +61,6 @@
             <a class="nav-link" href="./about-us.html">O nama</a>
           </li>
         </ul>
-        <!--  <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
       </div>
     </div>
   </nav>
@@ -78,7 +74,16 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 p-0">
+      <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+        <div class="container d-flex">
+          <button class="btn navbar-toggler2 w-100" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
         <div class="sidenav">
           <a href="./gs-ajax.html" class="dropdown-btn">
             <p>AJAX</p>
@@ -128,19 +133,22 @@
         </div>
       </div>
 
-      <div class="col-lg-10 d-flex justify-content-center align-items-center mt-5">
+      <div class="col-lg-10 col-md-10 col-sm-12 d-flex justify-content-center align-items-center mt-5">
         <div class="content get-s p-4" data-content="0">
           <h1 class="text-center display-4 mb-5 fw-bold">Dimensions</h1>
           <div class="row">
             <div class="col-lg-6 px-4">
               <p>Pomoću dimenzija možemo podešavati veličinu pojedinih HTML elementa.</p>
               <p>Dimenzije bolka u kome se nalazi sadržaj zadaju se atributima width i height.
-              Pored toga što se mogu zadati određene širine i visine, moguće je postaviti maksimalne i minimalne visine/širine pomoću max-height(width) i min-height(width). U slučaju da je sadržaj veći od dimenzija bloka, blok ostaje u zadatim dimenzijama kod sadržaj ispada. Ovo se rešava upotredom overflow-a</p>
+                Pored toga što se mogu zadati određene širine i visine, moguće je postaviti maksimalne i minimalne
+                visine/širine pomoću max-height(width) i min-height(width). U slučaju da je sadržaj veći od dimenzija
+                bloka, blok ostaje u zadatim dimenzijama kod sadržaj ispada. Ovo se rešava upotredom overflow-a</p>
             </div>
             <div class="col-lg-6 px-4">
-              <p>Dimenzije u jQuery-u su ugrađeni način koji olakšava rad sa dimenzijama elemenata i prozorom pretrazivača</p>
+              <p>Dimenzije u jQuery-u su ugrađeni način koji olakšava rad sa dimenzijama elemenata i prozorom
+                pretrazivača</p>
               <p>jQuery poseduje nekoliko važnih metoda za rad sa dimenzijama, a one su:</p>
-              <ul> 
+              <ul>
                 <li><b>.width()</b></li>
                 <li><b>.height()</b></li>
                 <li><b>.innerWidth()</b></li>
@@ -148,7 +156,9 @@
                 <li><b>.outerWidth()</b></li>
                 <li><b>.outerHeight()</b></li>
               </ul>
-              <p>Ako želite da vidite nešto opširnije o metodama za rad sa dimenzijama koje nudi jQuery posetite njihov <a href="https://api.jquery.com/category/dimensions/" target="_blank">sajt</a>.</p>
+              <p>Ako želite da vidite nešto opširnije o metodama za rad sa dimenzijama koje nudi jQuery posetite njihov
+                <a href="https://api.jquery.com/category/dimensions/" target="_blank">sajt</a>.
+              </p>
             </div>
           </div>
         </div>

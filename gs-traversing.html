@@ -61,10 +61,6 @@
             <a class="nav-link" href="./about-us.html">O nama</a>
           </li>
         </ul>
-        <!--  <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
       </div>
     </div>
   </nav>
@@ -78,101 +74,109 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 p-0">
-        <div class="sidenav">
-          <a href="./gs-ajax.html" class="dropdown-btn">
-            <p>AJAX</p>
-          </a>
-
-          <a href="./gs-attributes.html" class="dropdown-btn">
-            <p>Attributes</p>
-          </a>
-
-          <a href="./gs-dimensions.html" class="dropdown-btn">
-            <p>Dimensions</p>
-          </a>
-
-          <a href="./gs-css.html" class="dropdown-btn">
-            <p>CSS</p>
-          </a>
-
-          <a href="./gs-effects.html" class="dropdown-btn">
-            <p>Effects</p>
-          </a>
-
-          <a href="./gs-manipulation.html" class="dropdown-btn">
-            <p>Manipulation</p>
-          </a>
-
-          <a href="./gs-events.html" class="dropdown-btn">
-            <p>Events</p>
-          </a>
-
-          <a href="./gs-traversing.html" class="dropdown-btn">
-            <p>Traversing</p>
-          </a>
-          <div class="dropdown-container" style="display:block;">
-            <ul>
-              <li>.add()</li>
-              <li>.children()</li>
-              <li>.parents()</li>
-              <li>.siblings()</li>
-              <li>.eq()</li>
-              <li>.slice()</li>
-            </ul>
-          </div>
-
-          <a href="./gs-utilities.html" class="dropdown-btn">
-            <p>Utilities</p>
-          </a>
+      <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+        <div class="container d-flex">
+          <button class="btn navbar-toggler2 w-100" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
         </div>
+        <a href="./gs-ajax.html" class="dropdown-btn">
+          <p>AJAX</p>
+        </a>
+
+        <a href="./gs-attributes.html" class="dropdown-btn">
+          <p>Attributes</p>
+        </a>
+
+        <a href="./gs-dimensions.html" class="dropdown-btn">
+          <p>Dimensions</p>
+        </a>
+
+        <a href="./gs-css.html" class="dropdown-btn">
+          <p>CSS</p>
+        </a>
+
+        <a href="./gs-effects.html" class="dropdown-btn">
+          <p>Effects</p>
+        </a>
+
+        <a href="./gs-manipulation.html" class="dropdown-btn">
+          <p>Manipulation</p>
+        </a>
+
+        <a href="./gs-events.html" class="dropdown-btn">
+          <p>Events</p>
+        </a>
+
+        <a href="./gs-traversing.html" class="dropdown-btn">
+          <p>Traversing</p>
+        </a>
+        <div class="dropdown-container" style="display:block;">
+          <ul>
+            <li>.add()</li>
+            <li>.children()</li>
+            <li>.parents()</li>
+            <li>.siblings()</li>
+            <li>.eq()</li>
+            <li>.slice()</li>
+          </ul>
+        </div>
+
+        <a href="./gs-utilities.html" class="dropdown-btn">
+          <p>Utilities</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 d-flex justify-content-center align-items-center mt-5">
+      <div class="content" data-content="0">
+        <h1 class="text-center">Traversing</h1>
       </div>
 
-      <div class="col-lg-10 d-flex justify-content-center align-items-center mt-5">
-        <div class="content" data-content="0">
-          <h1 class="text-center">Traversing</h1>
-        </div>
-
-        <div class="content" data-content="1">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.add()</h3>
-              <p>Kreira novi jQuery objekat koji sadrži već odabrane elemente i dodaje elemente selektovane funkcijom
-                <b>.add()</b>
-              </p>
-              <hr size="5px">
-              <p> Različiti načini da se pozove funkcija add()</p>
-              <p> <b>- Prosleđivanjem CSS selektora</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
-                  selektor </i>)</p>
-              <p> <b>- Prosleđivanjem više elemenata</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
-                  elementi </i>)</p>
-              <p> <b>- Prosleđivanjem HTML elementa</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i> html
-                </i>)</p>
-              <p> <b>- Prosleđivanjem dodatnog jQuery objekta</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
-                  elementi </i>)</p>
-              <hr size="5px">
-              U datom primeru imamo određene <b>span, p h3 i elemente</b> kojima ćemo koristeći <b>funkciju add</b>
-              dodeliti neke <b>css stilove</b>. Prvo smo selektovali <b>span element</b> i dodali toj selekciji i <b>p
-                element</b> i onda obojici <b>css</b> metodom dodelili <b>boju pozadine crvenu</b>. Kasnije smo uradili
-              istu stvar ali videli da je moguće selektovati pomoću <b>id-a ili class-e elementa</b>.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class="content" data-content="1">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.add()</h3>
+            <p>Kreira novi jQuery objekat koji sadrži već odabrane elemente i dodaje elemente selektovane funkcijom
+              <b>.add()</b>
+            </p>
+            <hr size="5px">
+            <p> Različiti načini da se pozove funkcija add()</p>
+            <p> <b>- Prosleđivanjem CSS selektora</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                selektor </i>)</p>
+            <p> <b>- Prosleđivanjem više elemenata</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                elementi </i>)</p>
+            <p> <b>- Prosleđivanjem HTML elementa</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i> html
+              </i>)</p>
+            <p> <b>- Prosleđivanjem dodatnog jQuery objekta</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.add(<i>
+                elementi </i>)</p>
+            <hr size="5px">
+            U datom primeru imamo određene <b>span, p h3 i elemente</b> kojima ćemo koristeći <b>funkciju add</b>
+            dodeliti neke <b>css stilove</b>. Prvo smo selektovali <b>span element</b> i dodali toj selekciji i <b>p
+              element</b> i onda obojici <b>css</b> metodom dodelili <b>boju pozadine crvenu</b>. Kasnije smo uradili
+            istu stvar ali videli da je moguće selektovati pomoću <b>id-a ili class-e elementa</b>.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="1" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="1" spellcheck="false">
   <head>
       <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
@@ -189,54 +193,54 @@
       </script>
   </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="1">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="1">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="content" data-content="2">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.children()</h3>
-              <p>Vraća "decu" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja željenog selektora za
-                bolje filtriranje</p>
-              <hr size="5px">
-              <p> Različiti nacini da se pozove funkcija children()</p>
-              <p> <b>- Bez prosleđivanja parametara, vraća "decu" elementa nad kojim je pozvana funkcija</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary">.children()
-              </p>
-              <p> <b>- Prosleđivanje selektora koji filtrira "decu" </b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary" class="alert alert-secondary">.children(<i>
-                  selektor </i>)</p>
-              <hr size="5px">
-              <p class="mt-2 fw-bold"><b>children()</b> funkcija je slična funkciji <b>find()</b> ali za razliku od
-                <b>find()</b>, funkcija <b>children()</b> proverava DOM stablo samo jedan nivo niže, za razliku od
-                <b>find()</b> koji moze ići nivo niže
-              </p>
-              <hr size="5px">
-              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju children</b> smo prvo
-              selektovali
-              <b>"decu"</b> od svih div-ova i dali im <b>sivu pozadinu</b>. Posle smo selektovali isto <b>"decu"</b>
-              svih div-ova ali posle <b>filtrirali</b> decu sa prosleđenim argumentom tj. <b>id ili class</b> koji
-              <b>"dete" mora</b> da sadrži i naš filter će jedino da selektuje <b>drugi paragraf</b> i njemu će
-              postaviti <b>bela slova, deblja slova i padding 10px</b>.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class="content" data-content="2">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.children()</h3>
+            <p>Vraća "decu" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja željenog selektora za
+              bolje filtriranje</p>
+            <hr size="5px">
+            <p> Različiti nacini da se pozove funkcija children()</p>
+            <p> <b>- Bez prosleđivanja parametara, vraća "decu" elementa nad kojim je pozvana funkcija</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary">.children()
+            </p>
+            <p> <b>- Prosleđivanje selektora koji filtrira "decu" </b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary" class="alert alert-secondary">.children(<i>
+                selektor </i>)</p>
+            <hr size="5px">
+            <p class="mt-2 fw-bold"><b>children()</b> funkcija je slična funkciji <b>find()</b> ali za razliku od
+              <b>find()</b>, funkcija <b>children()</b> proverava DOM stablo samo jedan nivo niže, za razliku od
+              <b>find()</b> koji moze ići nivo niže
+            </p>
+            <hr size="5px">
+            U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju children</b> smo prvo
+            selektovali
+            <b>"decu"</b> od svih div-ova i dali im <b>sivu pozadinu</b>. Posle smo selektovali isto <b>"decu"</b>
+            svih div-ova ali posle <b>filtrirali</b> decu sa prosleđenim argumentom tj. <b>id ili class</b> koji
+            <b>"dete" mora</b> da sadrži i naš filter će jedino da selektuje <b>drugi paragraf</b> i njemu će
+            postaviti <b>bela slova, deblja slova i padding 10px</b>.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="2" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="2" spellcheck="false">
 <head>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -260,55 +264,55 @@
     </script>
 </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="2">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="2">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="content" data-content="3">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.parents()</h3>
-              <p>Vraca "roditelje" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja zeljenog selektora
-                za
-                bolje filtriranje</p>
-              <hr size="5px">
-              <p> Različiti načini da se pozove funkcija parents()</p>
-              <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary">.parents()
-              </p>
-              <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
-                class="alert alert-secondary">.parents(<i>
-                  selektor </i>)</p>
-              <hr size="5px">
-              <p class="mt-2 fw-bold">Pored funkcije parents() postoji i funkcija parent(), dok parents() vraća sve
-                roditelje elementa, parent() ide samo jedan nivo iznad u DOM stablu i vraća samo prvog "roditelja".
-              </p>
-              <hr size="5px">
-              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju parents</b> smo prvo
-              selektovali
-              <b>"roditelje"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju odradili
-              za id-eve <b>"drugi" i "treci"</b> ali da im <b>"roditelji"</b> moraju biti div-ovi i dodelili im boju <b>
-                pozadina roze i
-                crvenu
-              </b>.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class="content" data-content="3">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.parents()</h3>
+            <p>Vraca "roditelje" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja zeljenog selektora
+              za
+              bolje filtriranje</p>
+            <hr size="5px">
+            <p> Različiti načini da se pozove funkcija parents()</p>
+            <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary">.parents()
+            </p>
+            <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary"
+              class="alert alert-secondary">.parents(<i>
+                selektor </i>)</p>
+            <hr size="5px">
+            <p class="mt-2 fw-bold">Pored funkcije parents() postoji i funkcija parent(), dok parents() vraća sve
+              roditelje elementa, parent() ide samo jedan nivo iznad u DOM stablu i vraća samo prvog "roditelja".
+            </p>
+            <hr size="5px">
+            U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju parents</b> smo prvo
+            selektovali
+            <b>"roditelje"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju odradili
+            za id-eve <b>"drugi" i "treci"</b> ali da im <b>"roditelji"</b> moraju biti div-ovi i dodelili im boju <b>
+              pozadina roze i
+              crvenu
+            </b>.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="3" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="3" spellcheck="false">
 <head>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -328,55 +332,55 @@
   </script>
 </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="3">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="3">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="content" data-content="4">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.siblings()</h3>
-              <p>Vraća "braću i sestre" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja željenog
-                selektora
-                za
-                bolje filtriranje</p>
-              <hr size="5px">
-              <p> Različiti načini da se pozove funkcija siblings()</p>
-              <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings()
-              </p>
-              <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings(<i>
-                  selektor </i>)</p>
-              <hr size="5px">
-              <p class="mt-2 fw-bold">Za "roditelja" nekog elementa možemo gledati nivo iznad u DOM stablu, za "decu"
-                nivo ispod a za "braću i sestre" gledamo sve što se nalazi na istom nivou kao i dati element.
-              </p>
-              <hr size="5px">
-              U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju siblings</b> smo prvo
-              selektovali
-              <b>"braću i sestre"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju
-              odradili
-              za id <b>"treci"</b> ali da mu <b>"braća i sestre"</b> mora biti h3 element i dodelili im
-              boju <b>
-                pozadina crvenu
-              </b>.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class="content" data-content="4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.siblings()</h3>
+            <p>Vraća "braću i sestre" elemenata nad kojim se pozove, postoji i mogućnost prosleđivanja željenog
+              selektora
+              za
+              bolje filtriranje</p>
+            <hr size="5px">
+            <p> Različiti načini da se pozove funkcija siblings()</p>
+            <p> <b>- Bez prosleđivanja parametara, vraća "roditelje" elementa nad kojim je pozvana funkcija</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings()
+            </p>
+            <p> <b>- Prosleđivanje selektora koji filtrira "roditelje" </b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary" class="alert alert-secondary">.siblings(<i>
+                selektor </i>)</p>
+            <hr size="5px">
+            <p class="mt-2 fw-bold">Za "roditelja" nekog elementa možemo gledati nivo iznad u DOM stablu, za "decu"
+              nivo ispod a za "braću i sestre" gledamo sve što se nalazi na istom nivou kao i dati element.
+            </p>
+            <hr size="5px">
+            U datom primeru imamo <b>određene div, p, h3 elemente</b> i koristeći <b>funkciju siblings</b> smo prvo
+            selektovali
+            <b>"braću i sestre"</b> div-a sa id-em "prvi" i dali im <b>sivu pozadinu</b>. Posle smo istu selekciju
+            odradili
+            za id <b>"treci"</b> ali da mu <b>"braća i sestre"</b> mora biti h3 element i dodelili im
+            boju <b>
+              pozadina crvenu
+            </b>.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="4" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="4" spellcheck="false">
 <head>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -397,46 +401,46 @@
   </script>
 </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="4">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="4">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="content" data-content="5">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.eq()</h3>
-              <p>Služi za uzimanje elementa sa određenim indeksom. Prvi element uvek ima indeks 0.</p>
-              <hr size="5px">
-              <p> Različiti načini da se pozove funkcija eq()</p>
-              <p> <b>- Prosleđivanje pozitivnog broja</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeks </i>)</p>
-              <p> <b>- Prosleđivanje negativnog broja</b></p>
-              <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeksOdPozadi </i>)</p>
-              <hr size="5px">
-              <p class="mt-2 fw-bold">U drugim programskim jezicima ovo možemo videti u sledećem fomartu
-                <b>nizElemenata[4].</b>.
-              </p>
-              <hr size="5px">
-              U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
-                eq</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafu sa <b>indeksom
-                0</b> smo <b>podebljali slova</b>, sa <b>indeksom 2</b> promenili <b>boju slova u belo a pozadine u
-                crno</b> i na kraju sa <b>indeksom 4</b> stavili <b>plavi border debljine 3px i padding 5px</b>.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class="content" data-content="5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.eq()</h3>
+            <p>Služi za uzimanje elementa sa određenim indeksom. Prvi element uvek ima indeks 0.</p>
+            <hr size="5px">
+            <p> Različiti načini da se pozove funkcija eq()</p>
+            <p> <b>- Prosleđivanje pozitivnog broja</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeks </i>)</p>
+            <p> <b>- Prosleđivanje negativnog broja</b></p>
+            <p class="alert alert-secondary" class="alert alert-secondary">.eq(<i> indeksOdPozadi </i>)</p>
+            <hr size="5px">
+            <p class="mt-2 fw-bold">U drugim programskim jezicima ovo možemo videti u sledećem fomartu
+              <b>nizElemenata[4].</b>.
+            </p>
+            <hr size="5px">
+            U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
+              eq</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafu sa <b>indeksom
+              0</b> smo <b>podebljali slova</b>, sa <b>indeksom 2</b> promenili <b>boju slova u belo a pozadine u
+              crno</b> i na kraju sa <b>indeksom 4</b> stavili <b>plavi border debljine 3px i padding 5px</b>.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="5" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="5" spellcheck="false">
 <head>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -459,49 +463,49 @@
   </script>
 </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="5">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="5">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class=" content" data-content="6">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h3 class="fw-bolder text-center py-3">.slice()</h3>
-              <p>Uzima elemente iz određenog raspona vrednosti. U obzir takođe dolaze negativne vrednosti.
-              </p>
-              <hr size="5px">
-              <p> Različiti načini da se pozove funkcija slice()</p>
-              <p> <b>- Prosleđivanjem početnog indeksa</b></p>
-              <p class="alert alert-secondary">.slice(<i> početak </i>)</p>
-              <p> <b>- Prosleđivanjem početnog i krajnjeg indeksa</b></p>
-              <p class="alert alert-secondary">.slice(<i> početak </i>, <i> kraj </i>)</p>
-              <hr size="5px">
-              <p class="mt-2 fw-bold">
-              </p>
-              <hr size="5px">
-              U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
-                slice</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafima od <b>
-                indeksa
-                2 do kraja selekcije
-              </b> podebljavamo slova. Paragrafima sa <b>indeksom između vrednosti 1 i 3</b> staviti boju slova
-              belu i pozadine crnu. <b>Počevši od trećeg paragrafa od pozadi pa sve do poslednjeg paragrafa</b> staviti
-              plavi border debljine 3px i padding 5px.
-              <hr size="5px">
-              <div class="d-flex justify-content-end">
-                <button class="btn btn-primary try-example">Pokreni primer</button>
-              </div>
-
+      <div class=" content" data-content="6">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h3 class="fw-bolder text-center py-3">.slice()</h3>
+            <p>Uzima elemente iz određenog raspona vrednosti. U obzir takođe dolaze negativne vrednosti.
+            </p>
+            <hr size="5px">
+            <p> Različiti načini da se pozove funkcija slice()</p>
+            <p> <b>- Prosleđivanjem početnog indeksa</b></p>
+            <p class="alert alert-secondary">.slice(<i> početak </i>)</p>
+            <p> <b>- Prosleđivanjem početnog i krajnjeg indeksa</b></p>
+            <p class="alert alert-secondary">.slice(<i> početak </i>, <i> kraj </i>)</p>
+            <hr size="5px">
+            <p class="mt-2 fw-bold">
+            </p>
+            <hr size="5px">
+            U datom primeru imamo <b>pet paragrafa</b> tj. pet <b>p elemenata</b> kojima ćemo pomoću <b>funkcije
+              slice</b> dodeliti željena <b>css svojstva</b> u odnosu na njihov <b>indeks</b>. Paragrafima od <b>
+              indeksa
+              2 do kraja selekcije
+            </b> podebljavamo slova. Paragrafima sa <b>indeksom između vrednosti 1 i 3</b> staviti boju slova
+            belu i pozadine crnu. <b>Počevši od trećeg paragrafa od pozadi pa sve do poslednjeg paragrafa</b> staviti
+            plavi border debljine 3px i padding 5px.
+            <hr size="5px">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary try-example">Pokreni primer</button>
             </div>
-            <div class="col-lg-6 py-3">
-              <div class="row h-100">
-                <div class="col-lg-12">
-                  <textarea class="first" data-index="6" spellcheck="false">
+
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <textarea class="first" data-index="6" spellcheck="false">
 <head>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -524,18 +528,18 @@
   </script>
 </body>
                     </textarea>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <iframe class="second" data-index="6">
-                  </iframe>
-                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <iframe class="second" data-index="6">
+                </iframe>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+
     </div>
+  </div>
   </div>
 
   <div class="footer container-fluid text-center text-white mt-5">
@@ -552,7 +556,7 @@
           </ul>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-evenly">
-          <div class="container p-0">
+          <div class="container p-0 footer-logo">
             <img src='./img/jquery-2-logo.png' class='img-fluid'>
           </div>
           <div class='container my-3 d-flex justify-content-evenly icons'>
