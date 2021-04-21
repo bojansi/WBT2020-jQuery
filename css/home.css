@@ -32,7 +32,7 @@
 	text-decoration: none;
 }
 
-#fixed3 > h1 {
+#fixed3 > h3 {
 	color: black;
 	text-shadow: 5px 5px 0 white, -2px -1px 0 white, 1px -1px 0 white,
 		-2px 1px 0 white, 1px 1px 0 white;
@@ -101,7 +101,7 @@
 	border: 0;
 }
 @media (max-width: 576px) {
-    #fixed3 > h1 {
+    #fixed3 > h3 {
         font-size: 3rem !important;
         padding: 0 40px;
     }
