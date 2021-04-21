@@ -118,3 +118,8 @@ h6 {
 .nav-link:hover {
 	background-color: rgb(218, 218, 218);
 }
+@media (max-width: 576px) {
+	.links > p > a {
+		font-size: 1.2rem;
+	}
+}

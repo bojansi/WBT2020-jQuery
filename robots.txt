@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thankful-wave-04eac0203.azurestaticapps.net/sitemap.xml
